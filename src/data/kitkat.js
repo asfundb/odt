@@ -1,5 +1,6 @@
-import kitkatNormalMilk from "../../public/kitkat-normal-milk.svg";
-import kitkatMaxi from "../../public/kitkat-maxi.svg";
+import kitkatNormalMilk250 from "../../public/kitkat-normal-milk.svg";
+import kitkatNormalMilk140 from "../../public/kitkat-140.svg";
+import kitkatMaxi from "../../public/kitkat-maxi-correct.svg";
 
 const kitkatBall = [
   {
@@ -9,7 +10,7 @@ const kitkatBall = [
       "Kitkat Ball is made of milk chocolate balls (39,6%) with a crunchy cereal center (18,8%) coated with confectioner's cream (40,6%).Both crunchy and melting, these balls to share are ideal for all those who like to take a break! HAVE A BREAK, HAVE A KITKAT.",
     price_a: 16,
     price_b: 20,
-    img: kitkatNormalMilk,
+    img: kitkatNormalMilk140,
   },
   {
     brand: "Kitkat",
@@ -18,7 +19,7 @@ const kitkatBall = [
       "Kitkat Ball is made of milk chocolate balls (39,6%) with a crunchy cereal center (18,8%) coated with confectioner's cream (40,6%).Both crunchy and melting, these balls to share are ideal for all those who like to take a break! HAVE A BREAK, HAVE A KITKAT.",
     price_a: 20,
     price_b: 25,
-    img: kitkatNormalMilk,
+    img: kitkatNormalMilk250,
   },
   {
     brand: "Kitkat",

@@ -12,7 +12,7 @@ const lesRecettesDeLAtelier = [
     brand: "LES RECETTES DE L'ATELIER",
     name: "Dark Roasted Hazelnuts",
     product_description:
-      "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole hazelnuts. A pure cocoa butter chocolate with no artificial flavors. And as there is no great chocolate without great cocoa, our cocoa beans are carefully selected and come from Rainforest Alliance certified plantations.",
+      "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole hazelnuts.",
     price_a: 20,
     price_b: 35,
     img: darkRoastedHazelnut,
@@ -21,7 +21,7 @@ const lesRecettesDeLAtelier = [
     brand: "LES RECETTES DE L'ATELIER",
     name: "Dark Crunchy Almonds",
     product_description:
-      "Discover our new recipe, even more intense in almonds! Let yourself be tempted by a bar of dark chocolate as fine as it is delicious enhanced by slivers of toasted and crunchy almonds. A delicious pure cocoa butter chocolate with no artificial flavors. And as there is no great chocolate without great cocoa, our cocoa beans are carefully selected and come from Rainforest Alliance certified plantations.",
+      "Discover our new recipe, even more intense in almonds! Let yourself be tempted by a bar of dark chocolate as fine as it is delicious enhanced by slivers of toasted and crunchy almonds. .",
     price_a: 20,
     price_b: 35,
     img: darkCrunchyAlmonds,
@@ -30,7 +30,7 @@ const lesRecettesDeLAtelier = [
     brand: "LES RECETTES DE L'ATELIER",
     name: "Dark Caramel Salt",
     product_description:
-      "Let yourself be tempted by a bar of dark chocolate as fine as it is delicious and enhanced by fine, crispy pieces of caramel with a hint of salt. A delicious pure cocoa butter chocolate with no artificial flavors. And as there is no great chocolate without great cocoa, our cocoa beans are carefully selected and come from Rainforest Alliance certified plantations. * More intense caramel flavor.",
+      "Let yourself be tempted by a bar of dark chocolate as fine as it is delicious and enhanced by fine, crispy pieces of caramel with a hint of salt.",
     price_a: 20,
     price_b: 35,
     img: darkCaramelSalt,
@@ -39,7 +39,7 @@ const lesRecettesDeLAtelier = [
     brand: "LES RECETTES DE L'ATELIER",
     name: "Dark Whole Almonds",
     product_description:
-      "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole almonds. A pure cocoa butter chocolate with no artificial flavors. And as there is no great chocolate without great cocoa, our cocoa beans are carefully selected and come from Rainforest Alliance certified plantations.",
+      "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole almonds. A pure cocoa butter chocolate with no artificial flavors.",
     price_a: 20,
     price_b: 35,
     img: darkWholeAlmonds,
@@ -48,7 +48,7 @@ const lesRecettesDeLAtelier = [
     brand: "LES RECETTES DE L'ATELIER",
     name: "Dark Whole Hazelnuts",
     product_description:
-      "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole hazelnuts. A pure cocoa butter chocolate with no artificial flavors. And as there is no great chocolate without great cocoa, our cocoa beans are carefully selected and come from Rainforest Alliance certified plantations.",
+      "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole hazelnuts. A pure cocoa butter chocolate with no artificial flavors.",
     price_a: 20,
     price_b: 35,
     img: darkWholeHazelnuts,
@@ -57,7 +57,7 @@ const lesRecettesDeLAtelier = [
     brand: "LES RECETTES DE L'ATELIER",
     name: "Milk Caramel Salt",
     product_description:
-      "Let yourself be tempted by a bar of milk chocolate as fine as it is delicious and enhanced by fine, crispy pieces of caramel with a hint of salt. A delicious pure cocoa butter chocolate with no artificial flavors. And as there is no great chocolate without great cocoa, our cocoa beans are carefully selected and come from Rainforest Alliance certified plantations.",
+      "Let yourself be tempted by a bar of milk chocolate as fine as it is delicious and enhanced by fine, crispy pieces of caramel with a hint of salt. A delicious pure cocoa butter chocolate with no artificial flavors.",
     price_a: 20,
     price_b: 35,
     img: milkCaramelSalt,
@@ -66,7 +66,7 @@ const lesRecettesDeLAtelier = [
     brand: "LES RECETTES DE L'ATELIER",
     name: "Milk Praline",
     product_description:
-      "Praline is a traditional filling in chocolate confectionery. Discover our unique recipe with notes of hazelnuts and vanilla delicately coated with an extra-fine milk chocolate that is pure cocoa butter, made from quality cocoa beans rigorously selected as part of the NESTLE Cocoa Plan and from certified plantations Rainforest Alliance. A gourmet harmony born from remarkable know-how.",
+      "Praline is a traditional filling in chocolate confectionery. Discover our unique recipe with notes of hazelnuts and vanilla delicately coated with an extra-fine milk chocolate that is pure cocoa butter.",
     price_a: 20,
     price_b: 35,
     img: milkPraline,
