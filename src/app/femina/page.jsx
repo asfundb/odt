@@ -67,7 +67,7 @@ export default function Stouffers() {
       </div>
       <div className="w-full items-center flex flex-col mt-20 bg-sky-100 py-20 gap-4">
         <p className="font-bold text-black">
-          You'll be invited to taste {selectedMeals.length}{" "}
+          You will be invited to taste {selectedMeals.length}{" "}
           {selectedMeals.length == 1 ? "product" : "products"}!
         </p>
         <form action="submit" className=" flex justify-center w-full">

@@ -71,7 +71,7 @@ export default function Stouffers() {
       </div>
       <div className="w-full items-center flex flex-col mt-20 bg-sky-100 py-20 gap-4">
         <p className="font-bold text-black">
-          You'll be invited to taste {selectedMeals.length}{" "}
+          You will be invited to taste {selectedMeals.length}{" "}
           {selectedMeals.length == 1 ? "product" : "products"}!
         </p>
         <form action="submit" className=" flex justify-center w-full">
@@ -118,7 +118,8 @@ export default function Stouffers() {
             )}
           </div>
           <div className="flex justify-center flex-col items-center gap-4 border-t border-slate-100 pt-4">
-            <p className="text-sm">How's the price?</p>
+            <p className="text-sm">How is the price?</p>
+
             <div className="flex justify-center gap-4">
               <button
                 className={`border rounded-full p-4 hover:cursor-pointer ${
