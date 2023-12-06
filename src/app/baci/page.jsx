@@ -73,7 +73,7 @@ export default function Stouffers() {
           ))}
         </div>
       </div>
-      <div className="w-full items-center flex flex-col mt-20 bg-sky-100 py-20 gap-4">
+      <div className="w-full items-center flex flex-col mt-20 bg-sky-100 py-20 gap-4 px-8">
         <p className="font-bold text-black">
           You will be invited to taste {selectedMeals.length}{" "}
           {selectedMeals.length == 1 ? "product" : "products"}!
