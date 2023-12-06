@@ -11,12 +11,11 @@ export default function Stouffers() {
   const [selectedMeals, setSelectedMeals] = useState([]);
   const [currentMeal, setCurrentMeal] = useState(null);
   const [feedback, setFeedback] = useState({});
-  const [currentPrice, setCurrentPrice] = useState();
+  const [priceType, setPriceType] = useState("price_a");
 
   useEffect(() => {
-    setCurrentPrice(priceSelector(baci[0].price_a, baci[0].price_b));
+    setPriceType(Math.random() < 0.5 ? "price_a" : "price_b");
   }, []);
-
   const handleFeedback = (meal, type) => {
     setFeedback({ ...feedback, [meal.name]: type });
   };
@@ -113,7 +112,7 @@ export default function Stouffers() {
             {currentMeal && (
               <>
                 <div className="badge badge-accent text-white">
-                  {currentPrice} Dhs
+                  {currentMeal[priceType]} Dhs
                 </div>
                 <p className="py-4 text-sm border-t border-slate-100 pl-2">
                   {currentMeal.product_description}

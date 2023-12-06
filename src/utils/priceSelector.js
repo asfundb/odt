@@ -1,9 +1,9 @@
-const priceSelector = (price_a, price_b) => {
+const priceSelector = () => {
   const randomValue = Math.random();
   if (randomValue < 0.5) {
-    return price_a;
+    return "price_a";
   } else {
-    return price_b;
+    return "price_b";
   }
 };
 

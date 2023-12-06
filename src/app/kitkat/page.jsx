@@ -1,15 +1,20 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import kitkatBall from "@/data/kitkat";
 import Image from "next/image";
 import banner from "../../../public/kitkat-banner.svg";
-import product from "../../../public/product.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
+import priceSelector from "@/utils/priceSelector";
 
 export default function Stouffers() {
   const [selectedMeals, setSelectedMeals] = useState([]);
   const [currentMeal, setCurrentMeal] = useState(null);
   const [feedback, setFeedback] = useState({});
+  const [priceType, setPriceType] = useState("price_a");
+
+  useEffect(() => {
+    setPriceType(Math.random() < 0.5 ? "price_a" : "price_b");
+  }, []);
 
   const handleFeedback = (meal, type) => {
     setFeedback({ ...feedback, [meal.name]: type });
@@ -108,7 +113,7 @@ export default function Stouffers() {
             {currentMeal && (
               <>
                 <div className="badge badge-accent text-white">
-                  {currentMeal.price_a} Dhs
+                  {currentMeal[priceType]} Dhs
                 </div>
                 <p className="py-4 text-sm border-t border-slate-100 pl-2">
                   {currentMeal.product_description}

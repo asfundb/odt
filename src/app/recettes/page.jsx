@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import recettes from "@/data/recettes";
 import Image from "next/image";
 import banner from "../../../public/recettes-banner.svg";
@@ -10,6 +10,11 @@ export default function Stouffers() {
   const [selectedMeals, setSelectedMeals] = useState([]);
   const [currentMeal, setCurrentMeal] = useState(null);
   const [feedback, setFeedback] = useState({});
+  const [priceType, setPriceType] = useState("price_a");
+
+  useEffect(() => {
+    setPriceType(Math.random() < 0.5 ? "price_a" : "price_b");
+  }, []);
 
   const handleFeedback = (meal, type) => {
     setFeedback({ ...feedback, [meal.name]: type });
@@ -108,7 +113,7 @@ export default function Stouffers() {
             {currentMeal && (
               <>
                 <div className="badge badge-accent text-white">
-                  {currentMeal.price_a} Dhs
+                  {currentMeal[priceType]} Dhs
                 </div>
                 <p className="py-4 text-sm border-t border-slate-100 pl-2">
                   {currentMeal.product_description}
