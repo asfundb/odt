@@ -1,6 +1,6 @@
 import kitkatNormalMilk250 from "../../public/kitkat-normal-milk.svg";
 import kitkatNormalMilk140 from "../../public/kitkat-140.svg";
-import kitkatMaxi from "../../public/kitkat-maxi-correct.svg";
+import kitkatMaxi from "../../public/kitkat-maxi-correct-test.svg";
 
 const kitkatBall = [
   {
