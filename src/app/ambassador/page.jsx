@@ -38,8 +38,8 @@ export default function Stouffers() {
       </div>
       <div className=" mx-10 lg:mx-48 my-16 text-black flex flex-col items-center">
         <div className="badge bg-sky-400 border-none badge-lg py-4 text-white mb-8">
-          Select the flavours you'd like to be invited to taste by clicking the
-          card
+          Select the flavours you would like to be invited to taste by clicking
+          the card
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {ambassador.map((meal, index) => (
