@@ -29,7 +29,6 @@ export default function Stouffers() {
       email: email,
       groups: ["106905892085041064"], // Baci Group ID
       status: "active",
-      subscribed_at: "2021-08-31 14:22:08",
     };
 
     mailerlite.subscribers

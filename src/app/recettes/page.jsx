@@ -32,7 +32,6 @@ export default function Stouffers() {
       email: email,
       groups: ["106907385771066738"], //L'Atelier Group ID
       status: "active",
-      subscribed_at: "2021-08-31 14:22:08",
     };
 
     mailerlite.subscribers
