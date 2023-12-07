@@ -5,12 +5,46 @@ import Image from "next/image";
 import banner from "../../../public/baci-banner.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
 import replaceSpacesWithHyphens from "@/utils/stringParser";
+import MailerLite from "@mailerlite/mailerlite-nodejs";
+import toast, { Toaster } from "react-hot-toast";
+
+const mailerlite = new MailerLite({
+  api_key: process.env.MAILER_LITE_API_KEY,
+});
 
 export default function Stouffers() {
   const [selectedMeals, setSelectedMeals] = useState([]);
   const [currentMeal, setCurrentMeal] = useState(null);
   const [feedback, setFeedback] = useState({});
   const [priceType, setPriceType] = useState("price_a");
+  const [email, setEmail] = useState("");
+
+  const updateEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  console.log(email);
+  const addSubscriber = (e) => {
+    e.preventDefault();
+    console.log(email);
+    const params = {
+      email: email,
+      groups: ["106905892085041064"], // Baci Group ID
+      status: "active",
+      subscribed_at: "2021-08-31 14:22:08",
+    };
+
+    mailerlite.subscribers
+      .createOrUpdate(params)
+      .then((response) => {
+        setEmail("");
+        toast.success("You're all signed up!");
+      })
+      .catch((error) => {
+        if (error.response) {
+          toast.error("Try again");
+        }
+      });
+  };
 
   useEffect(() => {
     setPriceType(Math.random() < 0.5 ? "price_a" : "price_b");
@@ -147,11 +181,17 @@ export default function Stouffers() {
           You will be invited to taste {selectedMeals.length}{" "}
           {selectedMeals.length == 1 ? "product" : "products"}!
         </p>
-        <form action="submit" className=" flex justify-center w-full">
+        <form
+          action="submit"
+          className=" flex justify-center w-full"
+          onSubmit={addSubscriber}
+        >
           <input
             type="email"
-            className="border rounded-l-full  w-[80%] lg:w-[25%] h-[50px] indent-4 border-r-0"
+            className="border rounded-l-full  w-[80%] lg:w-[25%] h-[50px] indent-4 border-r-0 text-black"
             placeholder="Enter Email"
+            onChange={updateEmail}
+            value={email}
           />{" "}
           <button className="btn text-white rounded-r-full border-l-0 bg-black">
             Submit
@@ -223,6 +263,7 @@ export default function Stouffers() {
           </div>
         </div>
       </dialog>
+      <Toaster position="bottom-right" reverseOrder={false} />
     </div>
   );
 }

@@ -1,16 +1,51 @@
 "use client";
+// eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiZGJjZjRkMjk0N2M5OTE2YzZjZTM0YzkwZTEwZGRmMGE5NDhjMjU1NTQ0YjUwZDcwODU1ZjhmODliNDU0NGNhMDNkNzA3NDM5ZmU2Y2IxNWIiLCJpYXQiOjE3MDE5NTM5NjguNDYyMDE2LCJuYmYiOjE3MDE5NTM5NjguNDYyMDIyLCJleHAiOjQ4NTc2Mjc1NjguNDQ2NjY4LCJzdWIiOiI3NDQyMTIiLCJzY29wZXMiOltdfQ.Ilc4GJgrnd-DdFjd7N4xPNrGH5p6HyYV74ki-05ciSLnkhOFxE1dLMVqOSr0RKJqzJjUx-zGBiGsiqzoRsHUe11D7B_6Wg7iiNlopru-r_88H3tMP-mhmuT1CEoFWM_6TBUpPLlK5ta50MogI36wZpSMnBboFtEf6gZTm4x3VmjMDk3-n0qugWRXgumI1ig7nc-oBz1ltT3cL6ioJgUG-jy4dpfHSa-wt80mRkvurmkT81lbXkSIpKV7focBSQbrXVxjnbRJpPcQqyqoWN4PNQrYyM-hPuvVKvy9gwezVPBjTBMkkUU3nlRSgfZnhaHyYWc5hYdsWoDENLydLljfl-EUsDQE1-jEQxrT_QqAGnYKo4RsiEkVDvPMb0Cn_IQTwo5VYjNxKxBMhPcKUTb3Q__sLD4GG-M3YwM7BP3XqxclCg6GZ-w2TAkHv_2ARo_3xyh6vAUi8bJJiWHKJ6_xKVaZGxdD_WT0jJHIntHyWGzjbBnjcYGJFKWEt8QrCiD1cHMio3Na5Kgz_fkur65SkezfDHKE47rsfpk3nbj4_vOOpUyMQDtBEofzgWwHi9rN6wUO9C3_ql6e5pFg3BiVTY9FgVlvd9RuXlCOc8l5iUKIkigPZgF8gWbCxNRBTQ_TG6-KQZisdFwaVRe7BQwlIdVVqQycGkpaALJN7W2M6M8`
 import React, { useState, useEffect } from "react";
 import recettes from "@/data/recettes";
 import Image from "next/image";
 import banner from "../../../public/recettes-banner.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
 import replaceSpacesWithHyphens from "@/utils/stringParser";
+import MailerLite from "@mailerlite/mailerlite-nodejs";
+import toast, { Toaster } from "react-hot-toast";
+
+const mailerlite = new MailerLite({
+  api_key: process.env.MAILER_LITE_API_KEY,
+});
 
 export default function Stouffers() {
   const [selectedMeals, setSelectedMeals] = useState([]);
   const [currentMeal, setCurrentMeal] = useState(null);
   const [feedback, setFeedback] = useState({});
   const [priceType, setPriceType] = useState("price_a");
+  const [email, setEmail] = useState("");
+
+  const updateEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  console.log(email);
+  const addSubscriber = (e) => {
+    e.preventDefault();
+    console.log(email);
+    const params = {
+      email: email,
+      groups: ["106907385771066738"], //L'Atelier Group ID
+      status: "active",
+      subscribed_at: "2021-08-31 14:22:08",
+    };
+
+    mailerlite.subscribers
+      .createOrUpdate(params)
+      .then((response) => {
+        setEmail("");
+        toast.success("You're all signed up");
+      })
+      .catch((error) => {
+        if (error.response) {
+          toast.error("Try again");
+        }
+      });
+  };
 
   useEffect(() => {
     setPriceType(Math.random() < 0.5 ? "price_a" : "price_b");
@@ -82,11 +117,17 @@ export default function Stouffers() {
           You will be invited to taste {selectedMeals.length}{" "}
           {selectedMeals.length == 1 ? "product" : "products"}!
         </p>
-        <form action="submit" className=" flex justify-center w-full">
+        <form
+          action="submit"
+          onSubmit={addSubscriber}
+          className="flex justify-center w-full"
+        >
           <input
             type="email"
-            className="border rounded-l-full  w-[80%] lg:w-[25%] h-[50px] indent-4 border-r-0"
+            className="border rounded-l-full  w-[80%] lg:w-[25%] h-[50px] indent-4 border-r-0 text-black"
             placeholder="Enter Email"
+            onChange={updateEmail}
+            value={email}
           />{" "}
           <button className="btn text-white rounded-r-full border-l-0 bg-black">
             Submit
@@ -162,6 +203,7 @@ export default function Stouffers() {
           </div>
         </div>
       </dialog>
+      <Toaster position="bottom-right" reverseOrder={false} />
     </div>
   );
 }
