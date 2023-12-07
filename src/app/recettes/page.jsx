@@ -85,7 +85,7 @@ export default function Stouffers() {
             className="border rounded-l-full  w-[80%] lg:w-[25%] h-[50px] indent-4 border-r-0"
             placeholder="Enter Email"
           />{" "}
-          <button className="btn text-white rounded-r-full border-l-0">
+          <button className="btn text-white rounded-r-full border-l-0 bg-black">
             Submit
           </button>
         </form>
@@ -123,8 +123,7 @@ export default function Stouffers() {
             )}
           </div>
           <div className="flex justify-center flex-col items-center gap-4 border-t border-slate-100 pt-4">
-            <p className="text-sm">How is the price?</p>
-
+            <p className="text-sm">Is this price reasonable?</p>
             <div className="flex justify-center gap-4">
               <button
                 className={`border rounded-full p-4 hover:cursor-pointer ${

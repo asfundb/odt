@@ -14,9 +14,9 @@ import extraDarkBijou from "../../public/baci/Extra-dark-bijou.svg";
 const originalDark = [
   {
     brand: "Baci",
-    name: "Original Dark Bag",
+    name: "Original Dark Bag (10pc)",
     product_description:
-      "Baci Perugina Milk Bag is the ideal way to share a moment of sweet pleasure with friends, colleagues or family. The velvety milk chocolate wraps the whole hazelnut and covers the soft inner with cocoa and hazelnut grains! Impossible to resist!",
+      "Baci Perugina Dark Bag is the ideal way to share a moment of sweet pleasure with friends, colleagues or family. The velvety Dark chocolate wraps the whole hazelnut and covers the soft inner with cocoa and hazelnut grains! Impossible to resist!",
     price_a: 25,
     price_b: 40,
     img: originalDarkBag,
@@ -24,9 +24,9 @@ const originalDark = [
   },
   {
     brand: "Baci",
-    name: "Original Dark Box",
+    name: "Original Dark Box (12pc)",
     product_description:
-      "The elegant and precious box of Baci Perugina is the ideal gift to leave a mark. Making eyes and mouth water, Baci Perugina Milk Box will spark emotions even on the most formal occasions.",
+      "The elegant and precious box of Baci Perugina is the ideal gift to leave a mark. Making eyes and mouth water, Baci Perugina Dark Box will spark emotions even on the most formal occasions.",
     price_a: 75,
     price_b: 100,
     img: originalDarkBox,
@@ -34,19 +34,19 @@ const originalDark = [
   },
   {
     brand: "Baci",
-    name: "Original Dark Box Maxi",
+    name: "Original Dark Box Maxi (28pc)",
     product_description:
-      "The elegant and precious box of Baci Perugina is the ideal gift to leave a mark. Making eyes and mouth water, Baci Perugina Milk Box will spark emotions even on the most formal occasions.",
-    price_a: 75,
-    price_b: 100,
+      "The elegant and precious box of Baci Perugina is the ideal gift to leave a mark. Making eyes and mouth water, Baci Perugina Dark Box will spark emotions even on the most formal occasions.",
+    price_a: 148,
+    price_b: 170,
     img: originalDarkBoxMaxi,
     id: 2,
   },
   {
     brand: "Baci",
-    name: "Original Dark Bijou",
+    name: "Original Dark Bijou (14pc)",
     product_description:
-      "A refined package, but as precious as a jewel, ready for any occasion. Surprise your guests at home with Baci® Perugina® Milk Bijou box, a creamy treat they will not resist. Offering Baci® Perugina Milk will be the best way to say: I care about you.",
+      "A refined package, but as precious as a jewel, ready for any occasion. Surprise your guests at home with Baci Perugina Dark Bijou box, a creamy treat they will not resist. Offering Baci Perugina Dark will be the best way to say: I care about you.",
     price_a: 27,
     price_b: 40,
     img: originalDarkBijou,
@@ -54,9 +54,9 @@ const originalDark = [
   },
   {
     brand: "Baci",
-    name: "Original Dark Tube",
+    name: "Original Dark Tube (3pc)",
     product_description:
-      "A refined package, but as precious as a jewel, ready for any occasion. Surprise your guests at home with Baci® Perugina® Milk Bijou box, a creamy treat they will not resist. Offering Baci® Perugina Milk will be the best way to say: I care about you.",
+      "A refined package, but as precious as a jewel, ready for any occasion. Surprise your guests at home with Baci Perugina Dark Bijou box, a creamy treat they will not resist. Offering Baci Perugina Dark will be the best way to say: I care about you.",
     price_a: 11,
     price_b: 17,
     img: originalDarkTube,
@@ -67,11 +67,11 @@ const originalDark = [
 const extraDark = [
   {
     brand: "Baci",
-    name: "Voglia di Baci",
+    name: "Voglia di Baci (14pc)",
     product_description:
       "Baci Perugina Extra Dark 70% is a refined combination dedicated to dark chocolate lovers. The wrapper is black illuminated by precious golden stars and inside, the inevitable, the love note, hides a sweet message.",
-    price_a: 45,
-    price_b: 60,
+    price_a: 27,
+    price_b: 40,
     img: extraDarkBijou,
     id: 5,
   },
@@ -80,7 +80,7 @@ const extraDark = [
 const originalMilk = [
   {
     brand: "Baci",
-    name: "Original Milk Bag",
+    name: "Original Milk Bag (10pc)",
     product_description:
       "Baci Perugina Milk Bag is the ideal way to share a moment of sweet pleasure with friends, colleagues or family. The velvety milk chocolate wraps the whole hazelnut and covers the soft inner with cocoa and hazelnut grains! Impossible to resist!",
     price_a: 25,
@@ -90,7 +90,7 @@ const originalMilk = [
   },
   {
     brand: "Baci",
-    name: "Original Milk Box",
+    name: "Original Milk Box (12pc)",
     product_description:
       "The elegant and precious box of Baci Perugina is the ideal gift to leave a mark. Making eyes and mouth water, Baci Perugina Milk Box will spark emotions even on the most formal occasions.",
     price_a: 75,
@@ -100,9 +100,9 @@ const originalMilk = [
   },
   {
     brand: "Baci",
-    name: "Original Milk Bijou",
+    name: "Original Milk Bijou (14pc)",
     product_description:
-      "A refined package, but as precious as a jewel, ready for any occasion. Surprise your guests at home with Baci® Perugina® Milk Bijou box, a creamy treat they will not resist. Offering Baci® Perugina Milk will be the best way to say: I care about you.",
+      "A refined package, but as precious as a jewel, ready for any occasion. Surprise your guests at home with Baci Perugina Milk Bijou box, a creamy treat they will not resist. Offering Baci Perugina Milk will be the best way to say: I care about you.",
     price_a: 27,
     price_b: 40,
     img: originalMilkBijou,
@@ -110,7 +110,7 @@ const originalMilk = [
   },
   {
     brand: "Baci",
-    name: "Original Milk Tube",
+    name: "Original Milk (3pc)",
     product_description:
       "The most velvety Baci Perugina in the packaging that made history. You can surprise your dearest friends and share with them a moment of irresistible pleasure with coffee or after an intimate dinner.",
     price_a: 11,

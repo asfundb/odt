@@ -3,7 +3,7 @@ import darkCrunchyAlmonds from "../../public/recettes/dark-crunchy-almonds.svg";
 import darkCaramelSalt from "../../public/recettes/dark-caramel-salt.svg";
 import darkWholeAlmonds from "../../public/recettes/dark-whole-almonds.svg";
 import darkWholeHazelnuts from "../../public/recettes/dark-whole-hazelnut.svg";
-import milkCaramelSalt from "../../public/recettes/milk-caramel-salt.svg";
+import milkMuseli from "../../public/recettes/milk-museli.svg";
 import milkPraline from "../../public/recettes/milk-praline.svg";
 import milkCaramelAlmondsAndHazelnut from "../../public/recettes/milk-caramel-almonds-hazelnut.svg";
 
@@ -55,12 +55,12 @@ const lesRecettesDeLAtelier = [
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
-    name: "Milk Caramel Salt",
+    name: "Milk Museli & Caramel",
     product_description:
       "Let yourself be tempted by a bar of milk chocolate as fine as it is delicious and enhanced by fine, crispy pieces of caramel with a hint of salt. A delicious pure cocoa butter chocolate with no artificial flavors.",
     price_a: 20,
     price_b: 35,
-    img: milkCaramelSalt,
+    img: milkMuseli,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
@@ -73,7 +73,7 @@ const lesRecettesDeLAtelier = [
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
-    name: "Milk Caramel Almonds, Hazelnuts",
+    name: "Milk Caramel, Almonds & Hazelnuts",
     product_description:
       "Let yourself be tempted by a melting milk chocolate enhanced by a delicious almond caramel as well as whole almonds and hazelnuts. A pure cocoa butter chocolate with no artificial flavors.",
     price_a: 20,
