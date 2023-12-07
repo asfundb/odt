@@ -4,7 +4,7 @@ import kitkatBall from "@/data/kitkat";
 import Image from "next/image";
 import banner from "../../../public/kitkat-banner.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
-import priceSelector from "@/utils/priceSelector";
+import replaceSpacesWithHyphens from "@/utils/stringParser";
 
 export default function Stouffers() {
   const [selectedMeals, setSelectedMeals] = useState([]);
@@ -66,6 +66,9 @@ export default function Stouffers() {
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
+                  id={`${meal?.brand}-${replaceSpacesWithHyphens(
+                    meal.name
+                  )}-more-info`}
                 >
                   i
                 </button>
@@ -132,6 +135,9 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={() => handleFeedback(currentMeal, "dislike")}
+                id={`${currentMeal?.brand}-${replaceSpacesWithHyphens(
+                  currentMeal?.name
+                )}-${priceType}-disliked`}
               >
                 <ThumbsDown width={25} height={25} />
               </button>
@@ -142,6 +148,9 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={() => handleFeedback(currentMeal, "like")}
+                id={`${currentMeal?.brand}-${replaceSpacesWithHyphens(
+                  currentMeal?.name
+                )}-${priceType}-liked`}
               >
                 <ThumbsUp width={25} height={25} />
               </button>
