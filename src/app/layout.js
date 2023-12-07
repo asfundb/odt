@@ -3,6 +3,9 @@ import "./globals.css";
 import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
+const none = "none";
+const hidden = "hidden";
+
 export const metadata = {
   title: "Yummy Groceries",
   description: "Yummy Grocies New Items",
@@ -33,7 +36,7 @@ export default function RootLayout({ children }) {
             src="https://www.googletagmanager.com/ns.html?id=GTM-NN9Z82TR"
             height="0"
             width="0"
-            style="display:none;visibility:hidden"
+            style={{ display: none, visibility: hidden }}
           ></iframe>
         </noscript>
         {children}
