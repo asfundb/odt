@@ -9,7 +9,7 @@ import MailerLite from "@mailerlite/mailerlite-nodejs";
 import toast, { Toaster } from "react-hot-toast";
 
 const mailerlite = new MailerLite({
-  api_key: process.env.MAILER_LITE_API_KEY,
+  api_key: process.env.NEXT_PUBLIC_MAILER_LITE_API_KEY,
 });
 
 export default function Stouffers() {
@@ -22,7 +22,6 @@ export default function Stouffers() {
   const updateEmail = (e) => {
     setEmail(e.target.value);
   };
-  console.log(email);
   const addSubscriber = (e) => {
     e.preventDefault();
     console.log(email);
