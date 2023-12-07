@@ -1,9 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import baci from "@/data/baci";
+import { originalDark, originalMilk, extraDark } from "@/data/baci";
 import Image from "next/image";
 import banner from "../../../public/baci-banner.svg";
-import product from "../../../public/product.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
 import priceSelector from "@/utils/priceSelector";
 
@@ -16,16 +15,17 @@ export default function Stouffers() {
   useEffect(() => {
     setPriceType(Math.random() < 0.5 ? "price_a" : "price_b");
   }, []);
+
   const handleFeedback = (meal, type) => {
     setFeedback({ ...feedback, [meal.name]: type });
   };
 
-  const addToSelectList = (index) => {
+  const addToSelectList = (mealId) => {
     setSelectedMeals((prevSelected) => {
-      if (prevSelected.includes(index)) {
-        return prevSelected.filter((mealIndex) => mealIndex !== index);
+      if (prevSelected.includes(mealId)) {
+        return prevSelected.filter((id) => id !== mealId);
       } else {
-        return [...prevSelected, index];
+        return [...prevSelected, mealId];
       }
     });
   };
@@ -46,14 +46,78 @@ export default function Stouffers() {
           Select the flavours you would like to be invited to taste by clicking
           the card
         </div>
+        {/* Each Section */}
+        <div className="text-lg font-bold w-full mt-8 mb-4 text-left">
+          Original Dark
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {baci.map((meal, index) => (
+          {originalDark.map((meal, index) => (
             <div
-              key={index}
+              key={meal.id}
               className={`card border w-300 cursor-pointer overflow-hidden ${
-                selectedMeals.includes(index) ? "border-green-500" : ""
+                selectedMeals.includes(meal.id) ? "border-green-500" : ""
               }`}
-              onClick={() => addToSelectList(index)}
+              onClick={() => addToSelectList(meal.id)}
+            >
+              <Image
+                src={meal.img}
+                alt={meal.name}
+                className="rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
+              />
+              <div className="flex justify-between items-center h-[50px] mx-4">
+                <h2 className="text-center text-sm">{meal.name}</h2>
+                <button
+                  className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
+                  onClick={(e) => openModal(meal, e)}
+                >
+                  i
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Each Section */}
+        <div className="text-lg font-bold w-full mt-8 mb-4 text-left">
+          Original Milk
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {originalMilk.map((meal, index) => (
+            <div
+              key={meal.id}
+              className={`card border w-300 cursor-pointer overflow-hidden ${
+                selectedMeals.includes(meal.id) ? "border-green-500" : ""
+              }`}
+              onClick={() => addToSelectList(meal.id)}
+            >
+              <Image
+                src={meal.img}
+                alt={meal.name}
+                className="rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
+              />
+              <div className="flex justify-between items-center h-[50px] mx-4">
+                <h2 className="text-center text-sm">{meal.name}</h2>
+                <button
+                  className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
+                  onClick={(e) => openModal(meal, e)}
+                >
+                  i
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Each Section */}
+        <div className="text-lg font-bold w-full mt-8 mb-4 text-left">
+          Extra Dark
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {extraDark.map((meal, index) => (
+            <div
+              key={meal.id}
+              className={`card border w-300 cursor-pointer overflow-hidden ${
+                selectedMeals.includes(meal.id) ? "border-green-500" : ""
+              }`}
+              onClick={() => addToSelectList(meal.id)}
             >
               <Image
                 src={meal.img}
