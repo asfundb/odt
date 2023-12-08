@@ -1,10 +1,13 @@
+import dark70 from "../../public/recettes/dark-70.svg";
 import darkRoastedHazelnut from "../../public/recettes/dark-roasted-hazelnut.svg";
 import darkCrunchyAlmonds from "../../public/recettes/dark-crunchy-almonds.svg";
 import darkCaramelSalt from "../../public/recettes/dark-caramel-salt.svg";
-import darkWholeAlmonds from "../../public/recettes/dark-whole-almonds.svg";
+import darkWholeAlmonds from "../../public/recettes/dark-whole-almonds-new.svg";
 import darkWholeHazelnuts from "../../public/recettes/dark-whole-hazelnut.svg";
 import milkMuseli from "../../public/recettes/milk-museli.svg";
 import milkPraline from "../../public/recettes/milk-praline.svg";
+import milkCrunchyAlmond from "../../public/recettes/milk-crunchy-almond.svg";
+import milkWholeHazelnut from "../../public/recettes/milk-whole-hazelnut-new.svg";
 import milkCaramelAlmondsAndHazelnut from "../../public/recettes/milk-caramel-almonds-hazelnut.svg";
 
 const lesRecettesDeLAtelier = [
@@ -46,6 +49,15 @@ const lesRecettesDeLAtelier = [
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
+    name: "Dark 70%",
+    product_description:
+      "Let yourself be tempted by a 70% cocoa dark chocolate bar that reveals all the flavor and richness of cocoa, with just the 3 essential ingredients to make delicious chocolate: cocoa mass, cocoa butter, sugar , and that's all.",
+    price_a: 30,
+    price_b: 20,
+    img: dark70,
+  },
+  {
+    brand: "LES RECETTES DE L'ATELIER",
     name: "Milk Museli & Caramel",
     product_description:
       "Let yourself be tempted by a bar of milk chocolate as fine as it is delicious and enhanced by fine, crispy pieces of caramel with a hint of salt. A delicious pure cocoa butter chocolate with no artificial flavors.",
@@ -64,12 +76,30 @@ const lesRecettesDeLAtelier = [
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
+    name: "Milk Crunchy Almond",
+    product_description:
+      "Discover our new recipe, even more intense in almonds! Let yourself be tempted by a bar of milk chocolate as fine as it is delicious and enhanced by slivers of toasted and crunchy almonds. A delicious pure cocoa butter chocolate with no artificial flavors.",
+    price_a: 20,
+    price_b: 35,
+    img: milkCrunchyAlmond,
+  },
+  {
+    brand: "LES RECETTES DE L'ATELIER",
     name: "Milk Caramel, Almonds & Hazelnuts",
     product_description:
       "Let yourself be tempted by a melting milk chocolate enhanced by a delicious almond caramel as well as whole almonds and hazelnuts. A pure cocoa butter chocolate with no artificial flavors.",
     price_a: 20,
     price_b: 35,
     img: milkCaramelAlmondsAndHazelnut,
+  },
+  {
+    brand: "LES RECETTES DE L'ATELIER",
+    name: "Milk Hazelnut",
+    product_description:
+      "Let yourself be tempted by a melting milk chocolate enhanced by delicious, delicately roasted whole hazelnuts. A pure cocoa butter chocolate with no artificial flavors. ",
+    price_a: 20,
+    price_b: 35,
+    img: milkWholeHazelnut,
   },
 ];
 
@@ -166,12 +196,12 @@ const lesRecettesDeLAtelier = [
 //   },
 //   {
 //     brand: "LES RECETTES DE L'ATELIER",
-//     name: "Dark Muesli",
+//     name: "Milk Crunchy Almond",
 //     product_description:
 //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat velit in suscipit mattis. Donec rhoncus risus in facilisis ullamcorper. Sed tortor diam, commodo quis nibh id, egestas elementum nulla. Sed purus ante, malesuada ac rutrum a, rutrum vel lacus. Suspendisse blandit felis et purus lobortis ullamcorper",
 //     price_a: 30,
 //     price_b: 20,
-//     img: "kitkatt-ball-all",
+//     img: milkCrunchyAlmond,
 //   },
 //   {
 //     brand: "LES RECETTES DE L'ATELIER",
@@ -252,7 +282,7 @@ const lesRecettesDeLAtelier = [
 //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat velit in suscipit mattis. Donec rhoncus risus in facilisis ullamcorper. Sed tortor diam, commodo quis nibh id, egestas elementum nulla. Sed purus ante, malesuada ac rutrum a, rutrum vel lacus. Suspendisse blandit felis et purus lobortis ullamcorper",
 //     price_a: 30,
 //     price_b: 20,
-//     img: "kitkatt-ball-all",
+//     img: milkWholeHazelnut,
 //   },
 //   {
 //     brand: "LES RECETTES DE L'ATELIER",

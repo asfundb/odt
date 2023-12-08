@@ -3,9 +3,17 @@
 <rect width="133" height="155" transform="matrix(0.997564 0.0697565 -0.422618 0.906308 179.506 156)" fill="#D0CDCD"/>
 </g>
 <rect width="367" height="382" fill="#F5F5F5"/>
-<rect x="101" y="48" width="166" height="286.573" fill="url(#pattern0)"/>
+<g filter="url(#filter1_f_217_201)">
+<rect width="133" height="155" transform="matrix(0.997564 0.0697565 -0.422618 0.906308 179.506 156)" fill="#D0CDCD"/>
+</g>
+<rect x="122" y="78" width="124" height="214" fill="url(#pattern0)"/>
 <defs>
 <filter id="filter0_f_217_201" x="74" y="116" width="278.182" height="229.755" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_217_201"/>
+</filter>
+<filter id="filter1_f_217_201" x="74" y="116" width="278.182" height="229.755" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_217_201"/>
