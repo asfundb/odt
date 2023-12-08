@@ -9,6 +9,18 @@ import originalMilkBijou from "../../public/baci/Original-milk-bijou.svg";
 import originalMilkTube from "../../public/baci/Original-milk-tube.svg";
 import extraDarkBijou from "../../public/baci/Extra-dark-bijou.svg";
 import extraDarkTube from "../../public/baci/Extra-dark-tube.svg";
+// MOBILE
+import originalDarkBagMobile from "../../public/baci/Mobile/Original-dark-bag.png";
+import originalDarkBoxMobile from "../../public/baci/Mobile/Original-dark-box.png";
+import originalDarkBoxMaxiMobile from "../../public/baci/Mobile/Original-dark-box-maxi.png";
+import originalDarkBijouMobile from "../../public/baci/Mobile/Original-dark-bijou.png";
+import originalDarkTubeMobile from "../../public/baci/Mobile/Original-dark-tube.png";
+import originalMilkBagMobile from "../../public/baci/Mobile/Original-milk-bag.png";
+import originalMilkBoxMobile from "../../public/baci/Mobile/Original-milk-box.png";
+import originalMilkBijouMobile from "../../public/baci/Mobile/Original-milk-bijou.png";
+import originalMilkTubeMobile from "../../public/baci/Mobile/Original-milk-tube.png";
+import extraDarkBijouMobile from "../../public/baci/Mobile/Extra-dark-bijou.png";
+import extraDarkTubeMobile from "../../public/baci/Mobile/Extra-dark-tube.png";
 
 const originalDark = [
   {
@@ -19,6 +31,7 @@ const originalDark = [
     price_a: 25,
     price_b: 40,
     img: originalDarkBag,
+    mob_img: originalDarkBagMobile,
     id: 0,
   },
   {
@@ -29,6 +42,7 @@ const originalDark = [
     price_a: 75,
     price_b: 100,
     img: originalDarkBox,
+    mob_img: originalDarkBoxMobile,
     id: 1,
   },
   {
@@ -38,7 +52,7 @@ const originalDark = [
       "The elegant and precious box of Baci Perugina is the ideal gift to leave a mark. Making eyes and mouth water, Baci Perugina Dark Box will spark emotions even on the most formal occasions.",
     price_a: 148,
     price_b: 170,
-    img: originalDarkBoxMaxi,
+    mob_img: originalDarkBoxMaxiMobile,
     id: 2,
   },
   {
@@ -48,7 +62,7 @@ const originalDark = [
       "A refined package, but as precious as a jewel, ready for any occasion. Surprise your guests at home with Baci Perugina Dark Bijou box, a creamy treat they will not resist. Offering Baci Perugina Dark will be the best way to say: I care about you.",
     price_a: 27,
     price_b: 40,
-    img: originalDarkBijou,
+    mob_img: originalDarkBijouMobile,
     id: 3,
   },
   {
@@ -59,6 +73,7 @@ const originalDark = [
     price_a: 11,
     price_b: 17,
     img: originalDarkTube,
+    mob_img: originalDarkTubeMobile,
     id: 4,
   },
 ];
@@ -72,6 +87,7 @@ const extraDark = [
     price_a: 27,
     price_b: 40,
     img: extraDarkBijou,
+    mob_img: extraDarkBijouMobile,
     id: 5,
   },
   {
@@ -82,6 +98,7 @@ const extraDark = [
     price_a: 11,
     price_b: 17,
     img: extraDarkTube,
+    mob_img: extraDarkTubeMobile,
     id: 6,
   },
 ];
@@ -95,6 +112,7 @@ const originalMilk = [
     price_a: 25,
     price_b: 40,
     img: originalMilkBag,
+    mob_img: originalMilkBagMobile,
     id: 7,
   },
   {
@@ -105,6 +123,7 @@ const originalMilk = [
     price_a: 75,
     price_b: 100,
     img: originalMilkBox,
+    mob_img: originalMilkBoxMobile,
     id: 8,
   },
   {
@@ -115,6 +134,7 @@ const originalMilk = [
     price_a: 27,
     price_b: 40,
     img: originalMilkBijou,
+    mob_img: originalMilkBijouMobile,
     id: 9,
   },
   {
@@ -125,6 +145,7 @@ const originalMilk = [
     price_a: 11,
     price_b: 17,
     img: originalMilkTube,
+    mob_img: originalMilkTubeMobile,
     id: 10,
   },
 ];

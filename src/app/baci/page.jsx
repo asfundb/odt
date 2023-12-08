@@ -137,7 +137,12 @@ export default function Stouffers() {
               <Image
                 src={meal.img}
                 alt={meal.name}
-                className="rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
+                className="hidden md:block rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
+              />
+              <Image
+                src={meal.mob_img}
+                alt={meal.name}
+                className="block md:hidden rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
               />
               <div className="flex justify-between items-center h-[50px] mx-4">
                 <h2 className="text-center text-sm">{meal.name}</h2>
