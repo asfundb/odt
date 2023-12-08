@@ -94,7 +94,7 @@ const lesRecettesDeLAtelier = [
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
-    name: "Milk Hazelnut",
+    name: "Milk Whole Hazelnut",
     product_description:
       "Let yourself be tempted by a melting milk chocolate enhanced by delicious, delicately roasted whole hazelnuts. A pure cocoa butter chocolate with no artificial flavors. ",
     price_a: 20,
