@@ -1,5 +1,4 @@
 import dark70 from "../../public/recettes/dark-70.svg";
-import darkRoastedHazelnut from "../../public/recettes/dark-roasted-hazelnut.svg";
 import darkCrunchyAlmonds from "../../public/recettes/dark-crunchy-almonds.svg";
 import darkCaramelSalt from "../../public/recettes/dark-caramel-salt.svg";
 import darkWholeAlmonds from "../../public/recettes/dark-whole-almonds-new.svg";
@@ -9,6 +8,17 @@ import milkPraline from "../../public/recettes/milk-praline.svg";
 import milkCrunchyAlmond from "../../public/recettes/milk-crunchy-almond.svg";
 import milkWholeHazelnut from "../../public/recettes/milk-whole-hazelnut-new.svg";
 import milkCaramelAlmondsAndHazelnut from "../../public/recettes/milk-caramel-almonds-hazelnut.svg";
+// MOBILE
+import dark70Mobile from "../../public/recettes/mobile/dark-70-mobile.png";
+import darkCrunchyAlmondsMobile from "../../public/recettes/mobile/dark-crunchy-almonds-mobile.png";
+import darkCaramelSaltMobile from "../../public/recettes/mobile/dark-caramel-salt-mobile.png";
+import darkWholeAlmondsMobile from "../../public/recettes/mobile/dark-whole-almonds-new-mobile.png";
+import darkWholeHazelnutsMobile from "../../public/recettes/mobile/dark-whole-hazelnut-mobile.png";
+import milkMuesliMobile from "../../public/recettes/mobile/milk-museli-mobile.png";
+import milkPralineMobile from "../../public/recettes/mobile/milk-praline-mobile.png";
+import milkCrunchyAlmondMobile from "../../public/recettes/mobile/milk-crunchy-almond-mobile.png";
+import milkWholeHazelnutMobile from "../../public/recettes/mobile/milk-whole-hazelnut-new-mobile.png";
+import milkCaramelAlmondsAndHazelnutMobile from "../../public/recettes/mobile/milk-caramel-almonds-hazelnut-mobile.png";
 
 const lesRecettesDeLAtelier = [
   {
@@ -19,6 +29,7 @@ const lesRecettesDeLAtelier = [
     price_a: 20,
     price_b: 35,
     img: darkCrunchyAlmonds,
+    mob_img: darkCrunchyAlmondsMobile,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
@@ -28,6 +39,7 @@ const lesRecettesDeLAtelier = [
     price_a: 20,
     price_b: 35,
     img: darkCaramelSalt,
+    mob_img: darkCaramelSaltMobile,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
@@ -37,6 +49,7 @@ const lesRecettesDeLAtelier = [
     price_a: 20,
     price_b: 35,
     img: darkWholeAlmonds,
+    mob_img: darkWholeAlmondsMobile,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
@@ -46,6 +59,7 @@ const lesRecettesDeLAtelier = [
     price_a: 20,
     price_b: 35,
     img: darkWholeHazelnuts,
+    mob_img: darkWholeHazelnutsMobile,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
@@ -55,6 +69,7 @@ const lesRecettesDeLAtelier = [
     price_a: 30,
     price_b: 20,
     img: dark70,
+    mob_img: dark70Mobile,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
@@ -64,6 +79,7 @@ const lesRecettesDeLAtelier = [
     price_a: 20,
     price_b: 35,
     img: milkMuesli,
+    mob_img: milkMuesliMobile,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
@@ -73,6 +89,7 @@ const lesRecettesDeLAtelier = [
     price_a: 20,
     price_b: 35,
     img: milkPraline,
+    mob_img: milkPralineMobile,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
@@ -82,6 +99,7 @@ const lesRecettesDeLAtelier = [
     price_a: 20,
     price_b: 35,
     img: milkCrunchyAlmond,
+    mob_img: milkCrunchyAlmondMobile,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
@@ -91,6 +109,7 @@ const lesRecettesDeLAtelier = [
     price_a: 20,
     price_b: 35,
     img: milkCaramelAlmondsAndHazelnut,
+    mob_img: milkCaramelAlmondsAndHazelnutMobile,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
@@ -100,6 +119,7 @@ const lesRecettesDeLAtelier = [
     price_a: 20,
     price_b: 35,
     img: milkWholeHazelnut,
+    mob_img: milkWholeHazelnutMobile,
   },
 ];
 
