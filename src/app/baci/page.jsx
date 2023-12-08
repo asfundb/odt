@@ -3,7 +3,12 @@ import React, { useEffect, useState } from "react";
 import { originalDark, originalMilk, extraDark } from "@/data/baci";
 import Image from "next/image";
 import banner from "../../../public/baci-banner.svg";
-import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
+import {
+  ThumbsUp,
+  ThumbsDown,
+  ArrowCircleDown,
+  ArrowCircleUp,
+} from "@phosphor-icons/react";
 import replaceSpacesWithHyphens from "@/utils/stringParser";
 import MailerLite from "@mailerlite/mailerlite-nodejs";
 import toast, { Toaster } from "react-hot-toast";
@@ -18,6 +23,7 @@ export default function Stouffers() {
   const [feedback, setFeedback] = useState({});
   const [priceType, setPriceType] = useState("price_a");
   const [email, setEmail] = useState("");
+  const [reachedEnd, setReachedEnd] = useState(false);
 
   const updateEmail = (e) => {
     setEmail(e.target.value);
@@ -66,6 +72,44 @@ export default function Stouffers() {
     event.stopPropagation();
     setCurrentMeal(meal);
     document.getElementById("my_modal_3").showModal();
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalPageHeight = document.documentElement.scrollHeight;
+      const scrollPoint = window.scrollY + window.innerHeight;
+      if (scrollPoint >= totalPageHeight) {
+        setReachedEnd(true);
+      } else {
+        setReachedEnd(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollYPosition = () => {
+    // Define how many pixels you want to scroll vertically
+    const scrollAmount = 1000; // For example, 100 pixels
+
+    // Scroll down by the defined amount
+    window.scrollBy({
+      top: scrollAmount, // vertical scroll amount
+      left: 0, // horizontal scroll amount (not needed in this case)
+      behavior: "smooth", // smooth scroll
+    });
+  };
+
+  const scrollYPositionTop = () => {
+    // Scroll down by the defined amount
+    window.scrollTo({
+      top: 0, // vertical scroll amount
+      left: 0, // horizontal scroll amount (not needed in this case)
+      behavior: "smooth", // smooth scroll
+    });
   };
 
   return (
@@ -261,6 +305,19 @@ export default function Stouffers() {
           </div>
         </div>
       </dialog>
+      {!reachedEnd ? (
+        <div className="hidden md:block md:fixed bottom-8 right-4 h-[30px]">
+          <button className="btn text-white" onClick={scrollYPosition}>
+            <ArrowCircleDown size={32} />
+          </button>
+        </div>
+      ) : (
+        <div className="hidden md:block md:fixed bottom-8 right-4 h-[30px]">
+          <button className="btn text-white" onClick={scrollYPositionTop}>
+            <ArrowCircleUp size={32} />
+          </button>
+        </div>
+      )}
       <Toaster position="bottom-right" reverseOrder={false} />
     </div>
   );
