@@ -11,6 +11,7 @@
   "dependencies": {
     "@mailerlite/mailerlite-nodejs": "^1.2.0",
     "@phosphor-icons/react": "^2.0.15",
+    "@vercel/analytics": "^1.1.1",
     "daisyui": "^4.4.19",
     "next": "14.0.3",
     "react": "^18",

@@ -172,7 +172,7 @@ export default function Stouffers() {
                     ? "bg-red-500 text-white"
                     : ""
                 }`}
-                onClick={() => handleFeedback(currentMeal, "dislike")}
+                onClick={(e) => handleFeedback(currentMeal, "dislike")}
                 id={`${currentMeal?.brand}-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-disliked`}
@@ -185,7 +185,7 @@ export default function Stouffers() {
                     ? "bg-green-500 text-white"
                     : ""
                 }`}
-                onClick={() => handleFeedback(currentMeal, "like")}
+                onClick={(e) => handleFeedback(currentMeal, "like")}
                 id={`${currentMeal?.brand}-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-liked`}

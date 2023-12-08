@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 const none = "none";
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
         {children}
+        <Analytics />
       </body>
     </html>
   );
