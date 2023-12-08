@@ -2,6 +2,7 @@ import kitkatNormalMilk250 from "../../public/kitkat-normal-milk.svg";
 import kitkatNormalMilk140 from "../../public/kitkat-140.svg";
 import kitkatWhite250 from "../../public/kitkat-normal-white.svg";
 import kitkatMaxi from "../../public/kitkat-maxi-correct-test.svg";
+import kitkatMaxiNew from "../../public/kitkat-ball-maxi-new.svg";
 
 const kitkatBall = [
   {
@@ -29,7 +30,7 @@ const kitkatBall = [
       "Kitkat Ball is made of milk chocolate balls (39,6%) with a crunchy cereal center (18,8%) coated with confectioner's cream (40,6%). Both crunchy and melting, these balls to share are ideal for all those who like to take a break! HAVE A BREAK, HAVE A KITKAT.",
     price_a: 40,
     price_b: 48,
-    img: kitkatMaxi,
+    img: kitkatMaxiNew,
   },
   {
     brand: "Kitkat",
