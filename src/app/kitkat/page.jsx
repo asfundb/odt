@@ -24,7 +24,6 @@ export default function Stouffers() {
   };
   const addSubscriber = (e) => {
     e.preventDefault();
-    console.log(email);
     const params = {
       email: email,
       groups: ["106907855697740829"], // KK Group ID

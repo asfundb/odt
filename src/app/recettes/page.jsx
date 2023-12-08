@@ -13,8 +13,6 @@ const mailerlite = new MailerLite({
   api_key: process.env.NEXT_PUBLIC_MAILER_LITE_API_KEY,
 });
 
-console.log(process.env.MAILER_LITE_API_KEY);
-
 export default function Stouffers() {
   const [selectedMeals, setSelectedMeals] = useState([]);
   const [currentMeal, setCurrentMeal] = useState(null);
@@ -27,7 +25,6 @@ export default function Stouffers() {
   };
   const addSubscriber = (e) => {
     e.preventDefault();
-    console.log(email);
     const params = {
       email: email,
       groups: ["106907385771066738"], //L'Atelier Group ID

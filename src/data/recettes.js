@@ -10,15 +10,6 @@ import milkCaramelAlmondsAndHazelnut from "../../public/recettes/milk-caramel-al
 const lesRecettesDeLAtelier = [
   {
     brand: "LES RECETTES DE L'ATELIER",
-    name: "Dark Roasted Hazelnuts",
-    product_description:
-      "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole hazelnuts.",
-    price_a: 20,
-    price_b: 35,
-    img: darkRoastedHazelnut,
-  },
-  {
-    brand: "LES RECETTES DE L'ATELIER",
     name: "Dark Crunchy Almonds",
     product_description:
       "Discover our new recipe, even more intense in almonds! Let yourself be tempted by a bar of dark chocolate as fine as it is delicious enhanced by slivers of toasted and crunchy almonds. .",

@@ -30,7 +30,6 @@ export default function Stouffers() {
   };
   const addSubscriber = (e) => {
     e.preventDefault();
-    console.log(email);
     const params = {
       email: email,
       groups: ["106905892085041064"], // Baci Group ID
