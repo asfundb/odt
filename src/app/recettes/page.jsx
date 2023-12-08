@@ -93,7 +93,7 @@ export default function Stouffers() {
                 className="hidden md:block rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
               />
               <Image
-                src={meal.mob_img}
+                src={meal?.mob_img}
                 alt={meal.name}
                 className="block md:hidden rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
               />

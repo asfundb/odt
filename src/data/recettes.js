@@ -9,16 +9,16 @@ import milkCrunchyAlmond from "../../public/recettes/milk-crunchy-almond.svg";
 import milkWholeHazelnut from "../../public/recettes/milk-whole-hazelnut-new.svg";
 import milkCaramelAlmondsAndHazelnut from "../../public/recettes/milk-caramel-almonds-hazelnut.svg";
 // MOBILE
-import dark70Mobile from "../../public/recettes/mobile/dark-70-mobile.png";
-import darkCrunchyAlmondsMobile from "../../public/recettes/mobile/dark-crunchy-almonds-mobile.png";
-import darkCaramelSaltMobile from "../../public/recettes/mobile/dark-caramel-salt-mobile.png";
-import darkWholeAlmondsMobile from "../../public/recettes/mobile/dark-whole-almonds-new-mobile.png";
-import darkWholeHazelnutsMobile from "../../public/recettes/mobile/dark-whole-hazelnut-mobile.png";
-import milkMuesliMobile from "../../public/recettes/mobile/milk-museli-mobile.png";
-import milkPralineMobile from "../../public/recettes/mobile/milk-praline-mobile.png";
-import milkCrunchyAlmondMobile from "../../public/recettes/mobile/milk-crunchy-almond-mobile.png";
-import milkWholeHazelnutMobile from "../../public/recettes/mobile/milk-whole-hazelnut-new-mobile.png";
-import milkCaramelAlmondsAndHazelnutMobile from "../../public/recettes/mobile/milk-caramel-almonds-hazelnut-mobile.png";
+import dark70Mobile from "../../public/recettes/Mobile/dark-70-mobile.png";
+import darkCrunchyAlmondsMobile from "../../public/recettes/Mobile/dark-crunchy-almonds-mobile.png";
+import darkCaramelSaltMobile from "../../public/recettes/Mobile/dark-caramel-salt-mobile.png";
+import darkWholeAlmondsMobile from "../../public/recettes/Mobile/dark-whole-almonds-new-mobile.png";
+import darkWholeHazelnutsMobile from "../../public/recettes/Mobile/dark-whole-hazelnut-mobile.png";
+import milkMuesliMobile from "../../public/recettes/Mobile/milk-museli-mobile.png";
+import milkPralineMobile from "../../public/recettes/Mobile/milk-praline-mobile.png";
+import milkCrunchyAlmondMobile from "../../public/recettes/Mobile/milk-crunchy-almond-mobile.png";
+import milkWholeHazelnutMobile from "../../public/recettes/Mobile/milk-whole-hazelnut-new-mobile.png";
+import milkCaramelAlmondsAndHazelnutMobile from "../../public/recettes/Mobile/milk-caramel-almonds-hazelnut-mobile.png";
 
 const lesRecettesDeLAtelier = [
   {
