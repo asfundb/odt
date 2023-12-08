@@ -148,7 +148,16 @@ export default function Stouffers() {
             </button>
           </form>
           <div className="flex items-center flex-col gap-3 mt-4">
-            <Image src={currentMeal?.img} alt="" className="w-[50%] rounded" />
+            <Image
+              src={currentMeal?.img}
+              alt=""
+              className="hidden md:block w-[50%] rounded"
+            />
+            <Image
+              src={currentMeal?.mob_img}
+              alt=""
+              className="md:hidden w-[50%] rounded"
+            />
             <h3 className="font-medium uppercase text-slate-600 text-sm mb-0 mt-4">
               {currentMeal ? currentMeal.brand : ""}
             </h3>
