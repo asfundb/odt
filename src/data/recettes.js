@@ -4,7 +4,7 @@ import darkCrunchyAlmonds from "../../public/recettes/dark-crunchy-almonds.svg";
 import darkCaramelSalt from "../../public/recettes/dark-caramel-salt.svg";
 import darkWholeAlmonds from "../../public/recettes/dark-whole-almonds-new.svg";
 import darkWholeHazelnuts from "../../public/recettes/dark-whole-hazelnut.svg";
-import milkMuseli from "../../public/recettes/milk-museli.svg";
+import milkMuesli from "../../public/recettes/milk-museli.svg";
 import milkPraline from "../../public/recettes/milk-praline.svg";
 import milkCrunchyAlmond from "../../public/recettes/milk-crunchy-almond.svg";
 import milkWholeHazelnut from "../../public/recettes/milk-whole-hazelnut-new.svg";
@@ -49,7 +49,7 @@ const lesRecettesDeLAtelier = [
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
-    name: "Dark 70%",
+    name: "Dark 70% Cacao",
     product_description:
       "Let yourself be tempted by a 70% cocoa dark chocolate bar that reveals all the flavor and richness of cocoa, with just the 3 essential ingredients to make delicious chocolate: cocoa mass, cocoa butter, sugar , and that's all.",
     price_a: 30,
@@ -58,12 +58,12 @@ const lesRecettesDeLAtelier = [
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
-    name: "Milk Museli & Caramel",
+    name: "Milk Muesli & Caramel",
     product_description:
       "Let yourself be tempted by a bar of milk chocolate as fine as it is delicious and enhanced by fine, crispy pieces of caramel with a hint of salt. A delicious pure cocoa butter chocolate with no artificial flavors.",
     price_a: 20,
     price_b: 35,
-    img: milkMuseli,
+    img: milkMuesli,
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
