@@ -149,9 +149,7 @@ export default function Stouffers() {
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
-                  id={`${meal?.brand}-${replaceSpacesWithHyphens(
-                    meal.name
-                  )}-more-info`}
+                  id={`B-${replaceSpacesWithHyphens(meal.name)}-more-info`}
                 >
                   i
                 </button>
@@ -185,7 +183,7 @@ export default function Stouffers() {
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
-                  id={`${meal?.brand}-${meal.name}-more-info`}
+                  id={`B-${meal.name}-more-info`}
                 >
                   i
                 </button>
@@ -221,7 +219,7 @@ export default function Stouffers() {
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
-                  id={`${meal?.brand}-${meal.name}-more-info`}
+                  id={`B-${meal.name}-more-info`}
                 >
                   i
                 </button>
@@ -303,7 +301,7 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={() => handleFeedback(currentMeal, "dislike")}
-                id={`${currentMeal?.brand}-${replaceSpacesWithHyphens(
+                id={`B-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-disliked`}
               >
@@ -316,7 +314,7 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={() => handleFeedback(currentMeal, "like")}
-                id={`${currentMeal?.brand}-${replaceSpacesWithHyphens(
+                id={`B-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-liked`}
               >
