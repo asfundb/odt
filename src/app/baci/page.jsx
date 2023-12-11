@@ -122,6 +122,40 @@ export default function Stouffers() {
           the card
         </div>
         {/* Each Section */}
+        <div className="text-lg font-bold w-full mt-8 mb-4 text-left">Milk</div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {originalMilk.map((meal, index) => (
+            <div
+              key={meal.id}
+              className={`card border w-300 cursor-pointer overflow-hidden ${
+                selectedMeals.includes(meal.id) ? "border-green-500" : ""
+              }`}
+              onClick={() => addToSelectList(meal.id)}
+            >
+              <Image
+                src={meal.img}
+                alt={meal.name}
+                className="hidden md:block rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
+              />
+              <Image
+                src={meal.mob_img}
+                alt={meal.name}
+                className="block md:hidden rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
+              />
+              <div className="flex justify-between items-center h-[50px] mx-4">
+                <h2 className="text-center text-sm">{meal.name}</h2>
+                <button
+                  className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
+                  onClick={(e) => openModal(meal, e)}
+                  id={`B-${meal.name}-more-info`}
+                >
+                  i
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Each Section */}
         <div className="text-lg font-bold w-full mt-8 mb-4 text-left">
           Original Dark
         </div>
@@ -150,40 +184,6 @@ export default function Stouffers() {
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
                   id={`B-${replaceSpacesWithHyphens(meal.name)}-more-info`}
-                >
-                  i
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-        {/* Each Section */}
-        <div className="text-lg font-bold w-full mt-8 mb-4 text-left">Milk</div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {originalMilk.map((meal, index) => (
-            <div
-              key={meal.id}
-              className={`card border w-300 cursor-pointer overflow-hidden ${
-                selectedMeals.includes(meal.id) ? "border-green-500" : ""
-              }`}
-              onClick={() => addToSelectList(meal.id)}
-            >
-              <Image
-                src={meal.img}
-                alt={meal.name}
-                className="hidden md:block rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
-              />
-              <Image
-                src={meal.mob_img}
-                alt={meal.name}
-                className="block md:hidden rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
-              />
-              <div className="flex justify-between items-center h-[50px] mx-4">
-                <h2 className="text-center text-sm">{meal.name}</h2>
-                <button
-                  className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
-                  onClick={(e) => openModal(meal, e)}
-                  id={`B-${meal.name}-more-info`}
                 >
                   i
                 </button>
