@@ -12,7 +12,7 @@ const kitkatBall = [
     brand: "Kitkat",
     name: "140 grams",
     product_description:
-      "Kitkat Ball is made of milk chocolate balls (39,6%) with a crunchy cereal center (18,8%) coated with confectioner's cream (40,6%). Both crunchy and melting, these balls to share are ideal for all those who like to take a break! HAVE A BREAK, HAVE A KITKAT.",
+      "Indulge in the 140g KitKat Ball Chocolate: a delightful combination of crunchy cereal balls wrapped in rich milk chocolate, all finished with a smooth confectioner's cream coating. Perfect for a solo treat or sharing a moment of sweetness",
     price_a: 12,
     price_b: 16,
     img: kitkatNormalMilk140,
@@ -22,7 +22,7 @@ const kitkatBall = [
     brand: "Kitkat",
     name: "250 grams",
     product_description:
-      "Kitkat Ball is made of milk chocolate balls (39,6%) with a crunchy cereal center (18,8%) coated with confectioner's cream (40,6%). Both crunchy and melting, these balls to share are ideal for all those who like to take a break! HAVE A BREAK, HAVE A KITKAT.",
+      "Savor the 250g KitKat Ball Chocolate: an irresistible blend of crunchy cereal centers enrobed in luscious milk chocolate, complemented by a velvety confectioner's cream coating. Ideal for a generous treat or sharing with friends.",
     price_a: 20,
     price_b: 30,
     img: kitkatNormalMilk250,
@@ -32,7 +32,7 @@ const kitkatBall = [
     brand: "Kitkat",
     name: "400 grams",
     product_description:
-      "Kitkat Ball is made of milk chocolate balls (39,6%) with a crunchy cereal center (18,8%) coated with confectioner's cream (40,6%). Both crunchy and melting, these balls to share are ideal for all those who like to take a break! HAVE A BREAK, HAVE A KITKAT.",
+      "Enjoy the abundance of the 400g KitKat Ball Chocolate: a delightful mix of crunchy cereal encased in smooth milk chocolate, topped with a creamy confectioner's cream. A perfect choice for larger gatherings or for those who love a little extra indulgence.",
     price_a: 35,
     price_b: 45,
     img: kitkatMaxi,
@@ -42,7 +42,7 @@ const kitkatBall = [
     brand: "Kitkat",
     name: "White 250 grams",
     product_description:
-      "Kitkat Ball is made of white chocolate balls (39,6%) with a crunchy cereal center (18,8%) coated with confectioner's cream (40,6%). Both crunchy and melting, these balls to share are ideal for all those who like to take a break! HAVE A BREAK, HAVE A KITKAT.",
+      "Enjoy the abundance of the 400g KitKat Ball Chocolate: a delightful mix of crunchy cereal encased in smooth white chocolate, topped with a creamy confectioner's cream. A perfect choice for larger gatherings or for those who love a little extra indulgence.",
     price_a: 20,
     price_b: 30,
     img: kitkatWhite250,
