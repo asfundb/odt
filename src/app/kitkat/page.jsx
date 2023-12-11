@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import kitkatBall from "@/data/kitkat";
 import Image from "next/image";
-import banner from "../../../public/kitkat-banner.svg";
+import banner from "../../../public/kitkat-banner-new.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
 import replaceSpacesWithHyphens from "@/utils/stringParser";
 import MailerLite from "@mailerlite/mailerlite-nodejs";
