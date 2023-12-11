@@ -42,7 +42,7 @@ const kitkatBall = [
     brand: "Kitkat",
     name: "White 250 grams",
     product_description:
-      "Enjoy the abundance of the 400g KitKat Ball Chocolate: a delightful mix of crunchy cereal encased in smooth white chocolate, topped with a creamy confectioner's cream. A perfect choice for larger gatherings or for those who love a little extra indulgence.",
+      "Savor the 250g KitKat Ball Chocolate: an irresistible blend of crunchy cereal centers enrobed in luscious white chocolate, complemented by a velvety confectioner's cream coating. Ideal for a generous treat or sharing with friends.",
     price_a: 20,
     price_b: 30,
     img: kitkatWhite250,
