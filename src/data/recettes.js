@@ -3,6 +3,10 @@ import darkCrunchyAlmonds from "../../public/recettes/dark-crunchy-almonds.svg";
 import darkCaramelSalt from "../../public/recettes/dark-caramel-salt.svg";
 import darkWholeAlmonds from "../../public/recettes/dark-whole-almonds-new.svg";
 import darkWholeHazelnuts from "../../public/recettes/dark-whole-hazelnut.svg";
+// new
+import darkPralineAmande from "../../public/recettes/dark-praline-amande.svg";
+import darkCrunchyHazelnut from "../../public/recettes/dark-roasted-hazelnut-new.svg";
+import milkCaramelGanache from "../../public/recettes/milk-caramel-ganache.svg";
 import milkMuesli from "../../public/recettes/milk-museli.svg";
 import milkPraline from "../../public/recettes/milk-praline.svg";
 import milkCrunchyAlmond from "../../public/recettes/milk-crunchy-almond.svg";
@@ -19,58 +23,12 @@ import milkPralineMobile from "../../public/recettes/Mobile/milk-praline-mobile.
 import milkCrunchyAlmondMobile from "../../public/recettes/Mobile/milk-crunchy-almond-mobile.png";
 import milkWholeHazelnutMobile from "../../public/recettes/Mobile/milk-whole-hazelnut-new-mobile.png";
 import milkCaramelAlmondsAndHazelnutMobile from "../../public/recettes/Mobile/milk-caramel-almonds-hazelnut-mobile.png";
+// new
+import darkPralineAmandeMobile from "../../public/recettes/Mobile/dark-praline-amande.png";
+import darkCrunchyHazelnutMobile from "../../public/recettes/Mobile/dark-roasted-hazelnut-new.png";
+import milkCaramelGanacheMobile from "../../public/recettes/Mobile/milk-caramel-ganache.png";
 
 const lesRecettesDeLAtelier = [
-  {
-    brand: "LES RECETTES DE L'ATELIER",
-    name: "Dark Crunchy Almonds",
-    product_description:
-      "Discover our new recipe, even more intense in almonds! Let yourself be tempted by a bar of dark chocolate as fine as it is delicious enhanced by slivers of toasted and crunchy almonds. .",
-    price_a: 12,
-    price_b: 18,
-    img: darkCrunchyAlmonds,
-    mob_img: darkCrunchyAlmondsMobile,
-  },
-  {
-    brand: "LES RECETTES DE L'ATELIER",
-    name: "Dark Caramel Salt",
-    product_description:
-      "Let yourself be tempted by a bar of dark chocolate as fine as it is delicious and enhanced by fine, crispy pieces of caramel with a hint of salt.",
-    price_a: 12,
-    price_b: 18,
-    img: darkCaramelSalt,
-    mob_img: darkCaramelSaltMobile,
-  },
-  {
-    brand: "LES RECETTES DE L'ATELIER",
-    name: "Dark Whole Almonds",
-    product_description:
-      "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole almonds. A pure cocoa butter chocolate with no artificial flavors.",
-    price_a: 12,
-    price_b: 18,
-    img: darkWholeAlmonds,
-    mob_img: darkWholeAlmondsMobile,
-  },
-  {
-    brand: "LES RECETTES DE L'ATELIER",
-    name: "Dark Whole Hazelnuts",
-    product_description:
-      "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole hazelnuts. A pure cocoa butter chocolate with no artificial flavors.",
-    price_a: 12,
-    price_b: 18,
-    img: darkWholeHazelnuts,
-    mob_img: darkWholeHazelnutsMobile,
-  },
-  {
-    brand: "LES RECETTES DE L'ATELIER",
-    name: "Dark 70% Cacao",
-    product_description:
-      "Let yourself be tempted by a 70% cocoa dark chocolate bar that reveals all the flavor and richness of cocoa, with just the 3 essential ingredients to make delicious chocolate: cocoa mass, cocoa butter, sugar , and that's all.",
-    price_a: 12,
-    price_b: 18,
-    img: dark70,
-    mob_img: dark70Mobile,
-  },
   {
     brand: "LES RECETTES DE L'ATELIER",
     name: "Milk Muesli & Caramel",
@@ -113,15 +71,88 @@ const lesRecettesDeLAtelier = [
   },
   {
     brand: "LES RECETTES DE L'ATELIER",
-    name: "Milk Whole Hazelnut",
+    name: "Milk Caramel Ganache",
     product_description:
-      "Let yourself be tempted by a melting milk chocolate enhanced by delicious, delicately roasted whole hazelnuts. A pure cocoa butter chocolate with no artificial flavors. ",
+      "Let yourself be tempted by a delicious bar of milk chocolate combined with a delicate caramel ganache filling. A pure cocoa butter chocolate with no artificial flavors.",
+    price_a: 30,
+    price_b: 20,
+    img: milkCaramelGanache,
+    mob_img: milkCaramelGanache,
+  },
+  {
+    brand: "LES RECETTES DE L'ATELIER",
+    name: "Dark Crunchy Hazelnut",
+    product_description:
+      "Let yourself be tempted by a delicious bar of extra-fine dark chocolate combined with a delicate roasted crunchy hazelnut pieces. A pure cocoa butter chocolate with no artificial flavors.",
     price_a: 12,
     price_b: 18,
-    img: milkWholeHazelnut,
-    mob_img: milkWholeHazelnutMobile,
+    img: darkCrunchyHazelnut,
+    mob_img: darkCrunchyHazelnutMobile,
+  },
+  {
+    brand: "LES RECETTES DE L'ATELIER",
+    name: "Dark Praline Amande",
+    product_description:
+      "Let yourself be tempted by a delicious bar of extra-fine dark chocolate combined with a delicate almond praline filling and caramelized almond pieces. A pure cocoa butter chocolate with no artificial flavors.",
+    price_a: 12,
+    price_b: 18,
+    img: darkPralineAmande,
+    mob_img: darkPralineAmandeMobile,
+  },
+  {
+    brand: "LES RECETTES DE L'ATELIER",
+    name: "Dark Crunchy Almonds",
+    product_description:
+      "Discover our new recipe, even more intense in almonds! Let yourself be tempted by a bar of dark chocolate as fine as it is delicious enhanced by slivers of toasted and crunchy almonds. .",
+    price_a: 12,
+    price_b: 18,
+    img: darkCrunchyAlmonds,
+    mob_img: darkCrunchyAlmondsMobile,
+  },
+  {
+    brand: "LES RECETTES DE L'ATELIER",
+    name: "Dark Caramel Salt",
+    product_description:
+      "Let yourself be tempted by a bar of dark chocolate as fine as it is delicious and enhanced by fine, crispy pieces of caramel with a hint of salt.",
+    price_a: 12,
+    price_b: 18,
+    img: darkCaramelSalt,
+    mob_img: darkCaramelSaltMobile,
+  },
+  {
+    brand: "LES RECETTES DE L'ATELIER",
+    name: "Dark 70% Cacao",
+    product_description:
+      "Let yourself be tempted by a 70% cocoa dark chocolate bar that reveals all the flavor and richness of cocoa, with just the 3 essential ingredients to make delicious chocolate: cocoa mass, cocoa butter, sugar , and that's all.",
+    price_a: 12,
+    price_b: 18,
+    img: dark70,
+    mob_img: dark70Mobile,
   },
 ];
+
+export default lesRecettesDeLAtelier;
+
+// {
+//   brand: "LES RECETTES DE L'ATELIER",
+//   name: "Dark Whole Almonds",
+//   product_description:
+//     "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole almonds. A pure cocoa butter chocolate with no artificial flavors.",
+//   price_a: 12,
+//   price_b: 18,
+//   img: darkWholeAlmonds,
+//   mob_img: darkWholeAlmondsMobile,
+// },
+// {
+//   brand: "LES RECETTES DE L'ATELIER",
+//   name: "Dark Whole Hazelnuts",
+//   product_description:
+//     "Let yourself be tempted by a melting dark chocolate enhanced by delicious, delicately roasted whole hazelnuts. A pure cocoa butter chocolate with no artificial flavors.",
+//   price_a: 12,
+//   price_b: 18,
+//   img: darkWholeHazelnuts,
+//   mob_img: darkWholeHazelnutsMobile,
+// },
 
 // const lesRecettesDeLAtelier = [
 //   {
@@ -354,5 +385,3 @@ const lesRecettesDeLAtelier = [
 //     img: "kitkatt-ball-all",
 //   },
 // ];
-
-export default lesRecettesDeLAtelier;
