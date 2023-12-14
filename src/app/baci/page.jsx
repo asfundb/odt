@@ -143,7 +143,9 @@ export default function Stouffers() {
                 className="block md:hidden rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
               />
               <div className="flex justify-between items-center h-[50px] mx-4">
-                <h2 className="text-center text-sm">{meal.name}</h2>
+                <h2 className="text-center text-xs  md:text-sm truncate ">
+                  {meal.name}
+                </h2>
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
@@ -179,7 +181,9 @@ export default function Stouffers() {
                 className="block md:hidden rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
               />
               <div className="flex justify-between items-center h-[50px] mx-4">
-                <h2 className="text-center text-sm">{meal.name}</h2>
+                <h2 className="text-center text-xs  md:text-sm truncate ">
+                  {meal.name}
+                </h2>
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
@@ -215,7 +219,9 @@ export default function Stouffers() {
                 className="block md:hidden rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
               />
               <div className="flex justify-between items-center h-[50px] mx-4">
-                <h2 className="text-center text-sm">{meal.name}</h2>
+                <h2 className="text-center text-xs  md:text-sm truncate ">
+                  {meal.name}
+                </h2>
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
