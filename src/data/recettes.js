@@ -74,8 +74,8 @@ const lesRecettesDeLAtelier = [
     name: "Milk Caramel Ganache",
     product_description:
       "Let yourself be tempted by a delicious bar of milk chocolate combined with a delicate caramel ganache filling. A pure cocoa butter chocolate with no artificial flavors.",
-    price_a: 30,
-    price_b: 20,
+    price_a: 12,
+    price_b: 18,
     img: milkCaramelGanache,
     mob_img: milkCaramelGanache,
   },
