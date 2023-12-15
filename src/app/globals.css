@@ -9,6 +9,6 @@ body {
   background: white !important;
 }
 
-input {
+input[type="email"] {
   background: white !important;
 }

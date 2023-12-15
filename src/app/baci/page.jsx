@@ -91,23 +91,20 @@ export default function Stouffers() {
   }, []);
 
   const scrollYPosition = () => {
-    // Define how many pixels you want to scroll vertically
-    const scrollAmount = 1000; // For example, 100 pixels
+    const scrollAmount = 1000;
 
-    // Scroll down by the defined amount
     window.scrollBy({
-      top: scrollAmount, // vertical scroll amount
-      left: 0, // horizontal scroll amount (not needed in this case)
-      behavior: "smooth", // smooth scroll
+      top: scrollAmount,
+      left: 0,
+      behavior: "smooth",
     });
   };
 
   const scrollYPositionTop = () => {
-    // Scroll down by the defined amount
     window.scrollTo({
-      top: 0, // vertical scroll amount
-      left: 0, // horizontal scroll amount (not needed in this case)
-      behavior: "smooth", // smooth scroll
+      top: 0,
+      left: 0,
+      behavior: "smooth",
     });
   };
 
