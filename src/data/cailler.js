@@ -37,14 +37,14 @@ import mobileCaillerMilkHazelnut300 from "../../public/cailler/Mobile/Milk-choco
 import caillerMilkHazelnut100 from "../../public/cailler/Desktop/Milk-chocolate-hazelnut-100.svg";
 import mobileCaillerMilkHazelnut100 from "../../public/cailler/Mobile/Milk-chocolate-hazelnut-100.jpg";
 
-import caillerChocmel100 from "../../public/cailler/Desktop/Milk-chocolate-chocmel-100.svg";
-import mobileCaillerChocmel100 from "../../public/cailler/Mobile/Milk-chocolate-chocmel-100.jpg";
+import caillerChocmel100 from "../../public/cailler/Desktop/Milk-chocolate-chocmel-100-new.svg";
+import mobileCaillerChocmel100 from "../../public/cailler/Mobile/Milk-chocolate-chocmel-100-new.jpg";
 
-import caillerFrigor100 from "../../public/cailler/Desktop/Milk-chocolate-frigor-100.svg";
-import mobileCaillerFrigor100 from "../../public/cailler/Mobile/Milk-chocolate-frigor-100.jpg";
+import caillerFrigor100 from "../../public/cailler/Desktop/Milk-chocolate-frigor-100-new.svg";
+import mobileCaillerFrigor100 from "../../public/cailler/Mobile/Milk-chocolate-frigor-100-new.jpg";
 
-import caillerRayon100 from "../../public/cailler/Desktop/Milk-chocolate-rayon-100.svg";
-import mobileCaillerRayon100 from "../../public/cailler/Mobile/Milk-chocolate-rayon-100.jpg";
+import caillerRayon100 from "../../public/cailler/Desktop/Milk-chocolate-rayon-100-new.svg";
+import mobileCaillerRayon100 from "../../public/cailler/Mobile/Milk-chocolate-rayon-100-new.jpg";
 //
 
 const cailler = [
