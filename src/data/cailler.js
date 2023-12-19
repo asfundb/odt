@@ -65,8 +65,8 @@ const cailler = [
       "Swiss Alp milk chocolate. Our chocolate recipe has been part of everyday life in Switzerland for decades. Combining fine cocoa beans with milk from local farms, it is a pure moment of simple delight.",
     price_a: 30,
     price_b: 20,
-    img: caillerMilk200,
-    mob_img: mobileCaillerMilk200,
+    img: caillerMilk100,
+    mob_img: mobileCaillerMilk100,
   },
   {
     brand: "Cailler",
