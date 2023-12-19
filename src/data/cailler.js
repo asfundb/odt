@@ -45,6 +45,7 @@ import mobileCaillerFrigor100 from "../../public/cailler/Mobile/Milk-chocolate-f
 
 import caillerRayon100 from "../../public/cailler/Desktop/Milk-chocolate-rayon-100.svg";
 import mobileCaillerRayon100 from "../../public/cailler/Mobile/Milk-chocolate-rayon-100.jpg";
+
 const cailler = [
   {
     brand: "Cailler",
