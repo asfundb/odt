@@ -19,9 +19,6 @@ export default function KitkatBreak() {
   const [mobileAdRating, setMobileAdRating] = useState(4);
   const [mobileMusicRating, setMobileMusicRating] = useState(4);
 
-  console.log("adRating", adRating);
-  console.log("musicRating", musicRating);
-
   const unmute = () => {
     if (!videoRef) {
       return;
