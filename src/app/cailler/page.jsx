@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import cailler from "@/data/cailler";
+import cailler from "@/data/en/cailler";
 import Image from "next/image";
 import banner from "../../../public/cailler/Cailler-banner.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
@@ -26,7 +26,7 @@ export default function Stouffers() {
     e.preventDefault();
     const params = {
       email: email,
-      groups: ["106907855697740829"], // KK Group ID
+      groups: ["108163773755294996"], // Cailler Group ID
       status: "active",
     };
 
@@ -103,7 +103,7 @@ export default function Stouffers() {
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
-                  id={`K-${replaceSpacesWithHyphens(meal.name)}-more-info`}
+                  id={`C-${replaceSpacesWithHyphens(meal.name)}-more-info`}
                 >
                   i
                 </button>
@@ -185,7 +185,7 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={(e) => handleFeedback(currentMeal, "dislike")}
-                id={`K-${replaceSpacesWithHyphens(
+                id={`C-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-disliked`}
               >
@@ -198,7 +198,7 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={(e) => handleFeedback(currentMeal, "like")}
-                id={`K-${replaceSpacesWithHyphens(
+                id={`C-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-liked`}
               >
