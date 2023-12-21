@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import hotpockets from "@/data/hotpockets";
+import hotpockets from "@/data/en/hotpockets";
 import Image from "next/image";
 import banner from "../../../public/hot-pocket-banner.svg";
 import product from "../../../public/product.svg";

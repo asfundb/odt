@@ -1,11 +1,11 @@
-import kitkatNormalMilk250 from "../../public/kitkat-normal-milk.svg";
-import kitkatNormalMilk140 from "../../public/kitkat-140.svg";
-import kitkatWhite250 from "../../public/kitkat-normal-white.svg";
-import kitkatWhite250Mobile from "../../public/kitkat-normal-white-mobile.jpg";
-import kitkatMaxi from "../../public/kitkat-maxi-correct-test.svg";
-import kitkatNormalMilkJpg from "../../public/kitkat-normal-jpg.jpg";
-import kitkatMaxiMob from "../../public/kitkat-maxi-mobile.jpg";
-import kitkatNormalMilk250Mobile from "../../public/kitkat-normal-milk-mobile.jpg";
+import kitkatNormalMilk250 from "../../../public/kitkat-normal-milk.svg";
+import kitkatNormalMilk140 from "../../../public/kitkat-140.svg";
+import kitkatWhite250 from "../../../public/kitkat-normal-white.svg";
+import kitkatWhite250Mobile from "../../../public/kitkat-normal-white-mobile.jpg";
+import kitkatMaxi from "../../../public/kitkat-maxi-correct-test.svg";
+import kitkatNormalMilkJpg from "../../../public/kitkat-normal-jpg.jpg";
+import kitkatMaxiMob from "../../../public/kitkat-maxi-mobile.jpg";
+import kitkatNormalMilk250Mobile from "../../../public/kitkat-normal-milk-mobile.jpg";
 
 const kitkatBall = [
   {

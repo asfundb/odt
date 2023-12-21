@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import chocoTrio from "@/data/choco";
+import chocoTrio from "@/data/en/choco";
 import Image from "next/image";
 import banner from "../../../public/choco-trio-banner.svg";
 import product from "../../../public/product.svg";

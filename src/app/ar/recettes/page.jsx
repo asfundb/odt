@@ -1,9 +1,8 @@
 "use client";
-// eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiZGJjZjRkMjk0N2M5OTE2YzZjZTM0YzkwZTEwZGRmMGE5NDhjMjU1NTQ0YjUwZDcwODU1ZjhmODliNDU0NGNhMDNkNzA3NDM5ZmU2Y2IxNWIiLCJpYXQiOjE3MDE5NTM5NjguNDYyMDE2LCJuYmYiOjE3MDE5NTM5NjguNDYyMDIyLCJleHAiOjQ4NTc2Mjc1NjguNDQ2NjY4LCJzdWIiOiI3NDQyMTIiLCJzY29wZXMiOltdfQ.Ilc4GJgrnd-DdFjd7N4xPNrGH5p6HyYV74ki-05ciSLnkhOFxE1dLMVqOSr0RKJqzJjUx-zGBiGsiqzoRsHUe11D7B_6Wg7iiNlopru-r_88H3tMP-mhmuT1CEoFWM_6TBUpPLlK5ta50MogI36wZpSMnBboFtEf6gZTm4x3VmjMDk3-n0qugWRXgumI1ig7nc-oBz1ltT3cL6ioJgUG-jy4dpfHSa-wt80mRkvurmkT81lbXkSIpKV7focBSQbrXVxjnbRJpPcQqyqoWN4PNQrYyM-hPuvVKvy9gwezVPBjTBMkkUU3nlRSgfZnhaHyYWc5hYdsWoDENLydLljfl-EUsDQE1-jEQxrT_QqAGnYKo4RsiEkVDvPMb0Cn_IQTwo5VYjNxKxBMhPcKUTb3Q__sLD4GG-M3YwM7BP3XqxclCg6GZ-w2TAkHv_2ARo_3xyh6vAUi8bJJiWHKJ6_xKVaZGxdD_WT0jJHIntHyWGzjbBnjcYGJFKWEt8QrCiD1cHMio3Na5Kgz_fkur65SkezfDHKE47rsfpk3nbj4_vOOpUyMQDtBEofzgWwHi9rN6wUO9C3_ql6e5pFg3BiVTY9FgVlvd9RuXlCOc8l5iUKIkigPZgF8gWbCxNRBTQ_TG6-KQZisdFwaVRe7BQwlIdVVqQycGkpaALJN7W2M6M8`
 import React, { useState, useEffect } from "react";
-import recettes from "@/data/en/recettes";
+import recettes from "@/data/ar/recettes";
 import Image from "next/image";
-import banner from "../../../public/recettes-banner.svg";
+import banner from "../../../../public/recettes/Recettes-banner-AR.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
 import replaceSpacesWithHyphens from "@/utils/stringParser";
 import MailerLite from "@mailerlite/mailerlite-nodejs";
@@ -27,7 +26,7 @@ export default function Stouffers() {
     e.preventDefault();
     const params = {
       email: email,
-      groups: ["106907385771066738"], //L'Atelier Group ID
+      groups: ["108163617505936627"], // KSA-Recettes Group ID
       status: "active",
     };
 
@@ -70,15 +69,17 @@ export default function Stouffers() {
 
   return (
     <div className="w-screen h-full">
-      <div className="border-b">
+      <div className="">
         <Image src={banner} alt="" className="w-screen " />
       </div>
-      <div className=" mx-10 lg:mx-48 my-16 text-black flex flex-col items-center">
+      <div className=" mx-10 lg:mx-48 my-16 text-black flex flex-col items-center ">
         <div className="badge bg-sky-400 border-none badge-lg lg:py-4 text-white mb-8 text-xs md:text-base mx-8 text-center py-6">
-          Select the flavours you would like to be invited to taste by clicking
-          the card
+          اختيارالنكهات التي تود أن تدعى لتذوقها
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div
+          dir="rtl"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
           {recettes.map((meal, index) => (
             <div
               key={index}
@@ -93,19 +94,18 @@ export default function Stouffers() {
                 className="hidden md:block rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
               />
               <Image
-                src={meal?.mob_img}
+                src={meal.mob_img}
                 alt={meal.name}
                 className="block md:hidden rounded-t-2xl md:hover:scale-125 md:hover:translate-y-5 transition duration-500 cursor-pointer object-cover"
               />
-              <div className="flex justify-between items-center h-[50px] mx-4">
-                <h2 className="text-center text-xs md:text-sm truncate">
+              <div className="flex justify-between items-center h-[50px] mx-4 text-xs md:text-sm">
+                <h2 className="text-center text-xs  md:text-sm truncate ">
                   {meal.name}
                 </h2>
-
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
-                  id={`R-${replaceSpacesWithHyphens(meal.name)}-more-info`}
+                  id={`ksa-K-${replaceSpacesWithHyphens(meal.name)}-more-info`}
                 >
                   i
                 </button>
@@ -116,23 +116,24 @@ export default function Stouffers() {
       </div>
       <div className="w-full items-center flex flex-col mt-20 bg-sky-100 py-20 gap-4 px-8">
         <p className="font-bold text-black">
-          You will be invited to taste {selectedMeals.length}{" "}
-          {selectedMeals.length == 1 ? "product" : "products"}!
+          {"سوف تتم دعوتك لتذوق" + selectedMeals.length + " منتج "}
         </p>
         <form
+          dir="rtl"
           action="submit"
+          className=" flex justify-center w-full"
           onSubmit={addSubscriber}
-          className="flex justify-center w-full"
         >
           <input
+            dir="rtl"
             type="email"
-            className="border rounded-l-full  w-[80%] lg:w-[25%] h-[50px] indent-4 border-r-0 text-black"
-            placeholder="Enter Email"
+            className="border rounded-r-full  w-[80%] lg:w-[25%] h-[50px] indent-4 border-r-l text-black"
+            placeholder="أدخل البريد الإلكتروني"
             onChange={updateEmail}
             value={email}
           />{" "}
-          <button className="btn text-white rounded-r-full border-l-0 bg-black">
-            Submit
+          <button className="btn text-white rounded-l-full border-r-0 bg-black">
+            تقديم
           </button>
         </form>
       </div>
@@ -168,7 +169,7 @@ export default function Stouffers() {
             {currentMeal && (
               <>
                 <div className="badge badge-accent text-white">
-                  {currentMeal[priceType]} Dhs
+                  {currentMeal[priceType]} ريال
                 </div>
                 <p className="py-4 text-sm border-t border-slate-100 pl-2">
                   {currentMeal.product_description}
@@ -178,7 +179,7 @@ export default function Stouffers() {
             )}
           </div>
           <div className="flex justify-center flex-col items-center gap-4 border-t border-slate-100 pt-4">
-            <p className="text-sm">Is this price reasonable?</p>
+            <p className="text-sm">برأيك، هل هذا السعر مناسب؟</p>
             <div className="flex justify-center gap-4">
               <button
                 className={`border rounded-full p-4 hover:cursor-pointer ${
@@ -186,8 +187,8 @@ export default function Stouffers() {
                     ? "bg-red-500 text-white"
                     : ""
                 }`}
-                onClick={() => handleFeedback(currentMeal, "dislike")}
-                id={`R-${replaceSpacesWithHyphens(
+                onClick={(e) => handleFeedback(currentMeal, "dislike")}
+                id={`ksa-K-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-disliked`}
               >
@@ -199,8 +200,8 @@ export default function Stouffers() {
                     ? "bg-green-500 text-white"
                     : ""
                 }`}
-                onClick={() => handleFeedback(currentMeal, "like")}
-                id={`R-${replaceSpacesWithHyphens(
+                onClick={(e) => handleFeedback(currentMeal, "like")}
+                id={`ksa-K-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-liked`}
               >

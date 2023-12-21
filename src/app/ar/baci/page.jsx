@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { originalDark, originalMilk, extraDark } from "@/data/en/baci";
+import { originalDark, originalMilk, extraDark } from "@/data/ar/baci";
 import Image from "next/image";
-import banner from "../../../public/baci-banner.svg";
+import banner from "../../../../public/baci/Baci-Banner-AR.svg";
 import {
   ThumbsUp,
   ThumbsDown,
@@ -32,7 +32,7 @@ export default function Stouffers() {
     e.preventDefault();
     const params = {
       email: email,
-      groups: ["106905892085041064"], // Baci Group ID
+      groups: ["108163633754670942"], // KSA-Baci Group ID
       status: "active",
     };
 
@@ -115,12 +115,16 @@ export default function Stouffers() {
       </div>
       <div className=" mx-10 lg:mx-48 my-16 text-black flex flex-col items-center">
         <div className="badge bg-sky-400 border-none badge-lg lg:py-4 text-white mb-8 text-xs md:text-base mx-8 text-center py-6">
-          Select the flavours you would like to be invited to taste by clicking
-          the card
+          اختيارالنكهات التي تود أن تدعى لتذوقها
         </div>
         {/* Each Section */}
-        <div className="text-lg font-bold w-full mt-8 mb-4 text-left">Milk</div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="text-lg font-bold w-full mt-8 mb-4 text-right">
+          حليب
+        </div>
+        <div
+          dir="rtl"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
           {originalMilk.map((meal, index) => (
             <div
               key={meal.id}
@@ -146,7 +150,7 @@ export default function Stouffers() {
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
-                  id={`B-${meal.name}-more-info`}
+                  id={`ksa-B-${meal.name}-more-info`}
                 >
                   i
                 </button>
@@ -155,10 +159,13 @@ export default function Stouffers() {
           ))}
         </div>
         {/* Each Section */}
-        <div className="text-lg font-bold w-full mt-8 mb-4 text-left">
-          Original Dark
+        <div className="text-lg font-bold w-full mt-8 mb-4 text-right">
+          الشوكولاتة الداكنة الأصلية
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div
+          dir="rtl"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
           {originalDark.map((meal, index) => (
             <div
               key={meal.id}
@@ -184,7 +191,7 @@ export default function Stouffers() {
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
-                  id={`B-${replaceSpacesWithHyphens(meal.name)}-more-info`}
+                  id={`ksa-B-${replaceSpacesWithHyphens(meal.name)}-more-info`}
                 >
                   i
                 </button>
@@ -193,10 +200,13 @@ export default function Stouffers() {
           ))}
         </div>
         {/* Each Section */}
-        <div className="text-lg font-bold w-full mt-8 mb-4 text-left">
-          Extra Dark
+        <div className="text-lg font-bold w-full mt-8 mb-4 text-right">
+          الشوكولاتة الداكنة جداً
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div
+          dir="rtl"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
           {extraDark.map((meal, index) => (
             <div
               key={meal.id}
@@ -222,7 +232,7 @@ export default function Stouffers() {
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
-                  id={`B-${meal.name}-more-info`}
+                  id={`ksa-B-${meal.name}-more-info`}
                 >
                   i
                 </button>
@@ -233,23 +243,24 @@ export default function Stouffers() {
       </div>
       <div className="w-full items-center flex flex-col mt-20 bg-sky-100 py-20 gap-4 px-8">
         <p className="font-bold text-black">
-          You will be invited to taste {selectedMeals.length}{" "}
-          {selectedMeals.length == 1 ? "product" : "products"}!
+          {"سوف تتم دعوتك لتذوق" + selectedMeals.length + " منتج "}
         </p>
         <form
+          dir="rtl"
           action="submit"
           className=" flex justify-center w-full"
           onSubmit={addSubscriber}
         >
           <input
+            dir="rtl"
             type="email"
-            className="border rounded-l-full  w-[80%] lg:w-[25%] h-[50px] indent-4 border-r-0 text-black"
-            placeholder="Enter Email"
+            className="border rounded-r-full  w-[80%] lg:w-[25%] h-[50px] indent-4 border-r-l text-black"
+            placeholder="أدخل البريد الإلكتروني"
             onChange={updateEmail}
             value={email}
           />{" "}
-          <button className="btn text-white rounded-r-full border-l-0 bg-black">
-            Submit
+          <button className="btn text-white rounded-l-full border-r-0 bg-black">
+            تقديم
           </button>
         </form>
       </div>
@@ -285,7 +296,7 @@ export default function Stouffers() {
             {currentMeal && (
               <>
                 <div className="badge badge-accent text-white">
-                  {currentMeal[priceType]} Dhs
+                  {currentMeal[priceType]} ريال
                 </div>
                 <p className="py-4 text-sm border-t border-slate-100 pl-2">
                   {currentMeal.product_description}
@@ -295,7 +306,7 @@ export default function Stouffers() {
             )}
           </div>
           <div className="flex justify-center flex-col items-center gap-4 border-t border-slate-100 pt-4">
-            <p className="text-sm">Is this price reasonable?</p>
+            <p className="text-sm">برأيك، هل هذا السعر مناسب؟</p>
             <div className="flex justify-center gap-4">
               <button
                 className={`border rounded-full p-4 hover:cursor-pointer ${
@@ -304,7 +315,7 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={() => handleFeedback(currentMeal, "dislike")}
-                id={`B-${replaceSpacesWithHyphens(
+                id={`ksa-B-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-disliked`}
               >
@@ -317,7 +328,7 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={() => handleFeedback(currentMeal, "like")}
-                id={`B-${replaceSpacesWithHyphens(
+                id={`ksa-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-liked`}
               >

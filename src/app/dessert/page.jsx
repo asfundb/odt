@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import dessert from "@/data/dessert";
+import dessert from "@/data/en/dessert";
 import Image from "next/image";
 import banner from "../../../public/dessert/Dessert-banner.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import rollups from "@/data/rollups";
+import rollups from "@/data/en/rollups";
 import Image from "next/image";
 import banner from "../../../public/roll-ups-banner.svg";
 import product from "../../../public/product.svg";

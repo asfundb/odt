@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import stouffersMeals from "@/data/stouffers-meals";
+import stouffersMeals from "@/data/en/stouffers-meals";
 import Image from "next/image";
 import banner from "../../../public/banner.svg";
 import product from "../../../public/product.svg";
