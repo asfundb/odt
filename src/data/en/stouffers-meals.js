@@ -133,7 +133,7 @@ const stouffersMeals = [
     price_b: 20,
   },
 ];
-// export default stouffersMeals;
+export default stouffersMeals;
 // // BAKED ZITI
 // // BEEF POT ROAST
 // // CHICKEN À LA KING
