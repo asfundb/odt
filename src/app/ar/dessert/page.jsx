@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import dessert from "@/data/ar/dessert";
 import Image from "next/image";
-import banner from "../../../../public/dessert/Dessert-banner-ar.svg";
+import banner from "../../../../public/dessert/Dessert-banner-AR.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
 import replaceSpacesWithHyphens from "@/utils/stringParser";
 import MailerLite from "@mailerlite/mailerlite-nodejs";
