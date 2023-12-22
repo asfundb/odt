@@ -14,7 +14,7 @@ import mobileSmallSaltedCaramel from "../../../public/recettes-boxes/Mobile/smal
 const recettesBoxes = [
   {
     brand: "Recettes De L'Atelier",
-    name: "Milk Chocolate Bites 400g",
+    name: "Milk Chocolate Bites 406g",
     product_description:
       "Unique chocolate expertise can be found in this assortment of three gourmet bites coated in sweet milk chocolate: Hazelnut pieces, cocoa beans and salted caramel.",
     price_a: 45,
@@ -24,7 +24,7 @@ const recettesBoxes = [
   },
   {
     brand: "Recettes De L'Atelier",
-    name: "Chocolate Bites 400g",
+    name: "Chocolate Bites 398g",
     product_description:
       "A unique chocolate expertise to be found in this assortment of four gourmet bites: Hazelnut pieces, salted caramel, cocoa beans and intense raspberry.",
     price_a: 45,
