@@ -64,7 +64,7 @@ const recettesBoxes = [
   },
   {
     brand: "Recettes De L'Atelier",
-    name: "Slated Caramel Bites 265g",
+    name: "Salted Caramel Bites 265g",
     product_description:
       "Discover our delicious bites with a melting center and crunchy inclusions. Made from pure cocoa butter chocolate",
     price_a: 32,
