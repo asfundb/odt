@@ -44,7 +44,7 @@ const recettesBoxes = [
   },
   {
     brand: "Recettes De L'Atelier",
-    name: "Cocao Bean 265g",
+    name: "Cocao Bean Bites 265g",
     product_description:
       "Discover our delicious bites filled with cocoa ganache, with a dark chocolate shell sprinkled with cocoa bean chips. Made from pure cocoa butter chocolate. ",
     price_a: 32,
