@@ -18,7 +18,7 @@ const stouffersSnacks = [
   },
   {
     brand: "Stouffer's",
-    name: "Loaded Tater Tot Bites",
+    name: "Loaded Tater Bites",
     product_description:
       "Crispy breading stuffed with potato, cheddar cheese, chives, sour cream & bacon. Made with ingredients you can feel good about for a homemade tasty snack or appetizer you will love. Try in Your Air Fryer",
     price_a: 36,
