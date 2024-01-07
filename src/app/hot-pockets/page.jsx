@@ -100,7 +100,7 @@ export default function Stouffers() {
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
-                  id={`RB-${replaceSpacesWithHyphens(meal.name)}-more-info`}
+                  id={`HP-${replaceSpacesWithHyphens(meal.name)}-more-info`}
                 >
                   i
                 </button>
@@ -182,7 +182,7 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={(e) => handleFeedback(currentMeal, "dislike")}
-                id={`RB-${replaceSpacesWithHyphens(
+                id={`HP-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-disliked`}
               >
@@ -195,7 +195,7 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={(e) => handleFeedback(currentMeal, "like")}
-                id={`RB-${replaceSpacesWithHyphens(
+                id={`HP-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-liked`}
               >

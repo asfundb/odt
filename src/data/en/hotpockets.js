@@ -2,15 +2,15 @@ import fourCheese from "../../../public/Hotpocket/Desktop/four-cheese.svg";
 import buffalo from "../../../public/Hotpocket/Desktop/buffalo.svg";
 import greenChile from "../../../public/Hotpocket/Desktop/Green-chile.svg";
 import phillySteak from "../../../public/Hotpocket/Desktop/Philly-steak.svg";
-import steakCheddar from "../../../public/Hotpocket/Desktop/Steak-and-cheddar.svg";
-import steakNacho from "../../../public/Hotpocket/Desktop/Steak-and-nachos.svg";
+import steakCheddar from "../../../public/Hotpocket/Desktop/steak-and-cheddar.svg";
+import steakNacho from "../../../public/Hotpocket/Desktop/steak-and-nachos.svg";
 
 import fourCheeseMobile from "../../../public/Hotpocket/Mobile/four-cheese.jpg";
 import buffaloMobile from "../../../public/Hotpocket/Mobile/buffalo.jpg";
 import greenChileMobile from "../../../public/Hotpocket/Mobile/Green-chile.jpg";
 import phillySteakMobile from "../../../public/Hotpocket/Mobile/Philly-steak.jpg";
-import steakCheddarMobile from "../../../public/Hotpocket/Mobile/Steak-and-cheddar.jpg";
-import steakNachoMobile from "../../../public/Hotpocket/Mobile/Steak-and-nachos.jpg";
+import steakCheddarMobile from "../../../public/Hotpocket/Mobile/steak-and-cheddar.jpg";
+import steakNachoMobile from "../../../public/Hotpocket/Mobile/steak-and-nachos.jpg";
 
 const hotpockets = [
   {
