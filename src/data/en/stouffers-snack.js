@@ -11,28 +11,18 @@ const stouffersSnacks = [
     name: "Mac & Cheese Bites",
     product_description:
       "Crispy breading stuffed with macaroni and creamy cheddar cheese. Made with ingredients you can feel good about for a homemade snack or appetizer you will love. Freshly Made, Simply Frozen",
-    price_a: 36,
-    price_b: 48,
+    price_a: 23,
+    price_b: 30,
     img: macAndCheeseDesktop,
     mob_img: macAndCheeseMobile,
-  },
-  {
-    brand: "Stouffer's",
-    name: "Loaded Tots Bites",
-    product_description:
-      "Crispy breading stuffed with potato, cheddar cheese, chives, sour cream & bacon. Made with ingredients you can feel good about for a homemade tasty snack or appetizer you will love. Try in Your Air Fryer",
-    price_a: 36,
-    price_b: 48,
-    img: tatersDesktop,
-    mob_img: tatersMobile,
   },
   {
     brand: "Stouffer's",
     name: "Nashville Hot Style Mac Bites",
     product_description:
       "Crispy, Nashville hot style breading stuffed with macaroni and creamy cheddar cheese. Made with ingredients you can feel good about for a homemade tasty snack or appetizer you will love. Freshly Made, Simply Frozen",
-    price_a: 36,
-    price_b: 48,
+    price_a: 23,
+    price_b: 30,
     img: nashvilleHotDesktop,
     mob_img: nashvilleHotMobile,
   },
