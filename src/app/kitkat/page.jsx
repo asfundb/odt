@@ -202,6 +202,7 @@ export default function Stouffers() {
                   currentMeal?.name
                 )}-${priceType}-liked`}
               >
+                x§x
                 <ThumbsUp width={25} height={25} />
               </button>
             </div>
