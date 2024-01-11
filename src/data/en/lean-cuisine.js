@@ -63,9 +63,9 @@ const leanCuisine = [
   },
   {
     brand: "Lean Cuisine",
-    name: "Five Cheese Ravioli",
+    name: "Five Cheese Rigatoni",
     product_description:
-      "Indulge in ravioli bursting with a blend of five cheeses, covered in a savory tomato sauce. A cheese lover's dream.",
+      "Indulge in rigatoni bursting with a blend of five cheeses, covered in a savory tomato sauce. A cheese lover's dream.",
     price_a: 25,
     price_b: 35,
     img: fiveCheeseRigatoni,
