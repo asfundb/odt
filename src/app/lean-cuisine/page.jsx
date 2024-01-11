@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import stouffersSnacks from "@/data/en/stouffers-snack";
+import leanCuisine from "@/data/en/lean-cuisine.js";
 import Image from "next/image";
 import banner from "../../../public/lean-cuisine/lean-cuisine-banner.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
@@ -27,7 +27,7 @@ export default function Stouffers() {
     e.preventDefault();
     const params = {
       email: email,
-      groups: ["109697029227153011"], // Stouffers-Snack Group ID
+      groups: ["110059128305485599"], // Lean Cuisine Group ID
       status: "active",
     };
 
@@ -79,7 +79,7 @@ export default function Stouffers() {
           the card
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {stouffersSnacks.map((meal, index) => (
+          {leanCuisine.map((meal, index) => (
             <div
               key={index}
               className={`card border w-300 cursor-pointer overflow-hidden ${
@@ -104,7 +104,7 @@ export default function Stouffers() {
                 <button
                   className="w-[25px] h-[25px] rounded-full border-black border hover:text-white hover:bg-black cursor-pointer"
                   onClick={(e) => openModal(meal, e)}
-                  id={`SS-${replaceSpacesWithHyphens(meal.name)}-more-info`}
+                  id={`LC-${replaceSpacesWithHyphens(meal.name)}-more-info`}
                 >
                   i
                 </button>
@@ -186,7 +186,7 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={(e) => handleFeedback(currentMeal, "dislike")}
-                id={`SS-${replaceSpacesWithHyphens(
+                id={`LC-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-disliked`}
               >
@@ -199,7 +199,7 @@ export default function Stouffers() {
                     : ""
                 }`}
                 onClick={(e) => handleFeedback(currentMeal, "like")}
-                id={`SS-${replaceSpacesWithHyphens(
+                id={`LC-${replaceSpacesWithHyphens(
                   currentMeal?.name
                 )}-${priceType}-liked`}
               >
