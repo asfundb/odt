@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import leanCuisine from "@/data/en/lean-cuisine.js";
 import Image from "next/image";
-import banner from "../../../public/lean-cuisine/lean-cuisine-banner.svg";
+import banner from "../../../public/lean-cuisine/lean-cuisine-banner-2.svg";
 import { ThumbsUp, ThumbsDown } from "@phosphor-icons/react";
 import replaceSpacesWithHyphens from "@/utils/stringParser";
 import MailerLite from "@mailerlite/mailerlite-nodejs";
