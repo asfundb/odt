@@ -65,7 +65,7 @@ const hotpockets = [
   },
   {
     brand: "Hot Pockets",
-    name: "Green Chile Cheesesteak (2pcs)",
+    name: "Green Chili Cheesesteak (2pcs)",
     product_description:
       "Spicy & juicy cheesesteak, jalapeno peppers, cilantro and real reduced fat mozzarella cheese in a crispy seasoned crust Made with Hot Ones™ Los Calientes™ Verde hot sauce Experience the thrill of the Hot Ones™ challenge right from your home. Total Weight: 255g",
     price_a: 24,
